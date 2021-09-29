@@ -260,4 +260,3 @@ const shops = [
 
 
 export default shops;
-category

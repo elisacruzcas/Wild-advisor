@@ -1,0 +1,39 @@
+#template {
+    display: visible; /*to change to none when everything's done*/
+}
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    
+  }
+
+header {
+    color: white;
+    text-align: center;
+    margin: -25px -20px 0px -20px;
+    height: 3em;
+    background-color: black;
+}
+
+.title {
+    height: 3em;
+    border: 1px solid;
+}
+
+/* .space {
+    height: 1em;
+    border: red 1px solid;
+} */
+
+.cards {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: gray;
+}
