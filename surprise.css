@@ -1,13 +1,31 @@
 h1 {
     color: red;
+    text-align: center;
 }
 
 h2 {
     background-color: beige;
+    text-align: center;
 }
 
-.box {
+form {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+.excuses-bidons {
+    background-color: greenyellow;
+    height: 20em;
+    text-align: center;
+}
