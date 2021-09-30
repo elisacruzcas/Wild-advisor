@@ -1,11 +1,21 @@
 h1 {
-    color: red;
     text-align: center;
+
+    /* A METTRE A LA CHARTE */
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    /* A METTRE A LA CHARTE */
 }
 
 h2 {
-    background-color: beige;
     text-align: center;
+    padding: 5px;
+
+    /* A METTRE A LA CHARTE */
+    background-color: beige;
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+    /* A METTRE A LA CHARTE */
 }
 
 form {
@@ -14,18 +24,59 @@ form {
     justify-content: space-around;
 }
 
-body {
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+.form-element {
+    margin: 5px;
 }
 
-button {
+body {
+    /* A METTRE A LA CHARTE */
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    /* A METTRE A LA CHARTE */
+}
+
+.form-button{
+    margin-top: 1em;
     color: white;
     font-weight: bold;
-    background-color: red;
+    text-align: center;
+}
+
+.first-button {
+    /* A METTRE A LA CHARTE */
+    background-color: purple;
+    border-color: red;
+    font-weight: 500;
+    /* A METTRE A LA CHARTE */
+
+    padding: 3px 15px;
+    border-radius: 8px;
+}
+
+.first-button:hover {
+    box-shadow: 0 0.5em 0.5em 0;
+    opacity: 0.5;
 }
 
 .excuses-bidons {
-    background-color: greenyellow;
     height: 20em;
     text-align: center;
+
+    /* A METTRE A LA CHARTE */
+    background-color: greenyellow;
+    /* A METTRE A LA CHARTE */
+}
+
+.form-element {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: pink;
+}
+
+.btn:hover {
+    background-color: pink;
+    opacity: 0.5;
 }
