@@ -76,3 +76,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
 }
+
+.search-results {
+    height: 13em;
+    background-color: rgba(132, 145, 146, 50%);
+    display: none;
+}
