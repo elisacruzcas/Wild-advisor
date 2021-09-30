@@ -1,9 +1,10 @@
 h1 {
     text-align: center;
+    text-transform: uppercase;
 
     /* A METTRE A LA CHARTE */
     font-family: 'Courier New', Courier, monospace;
-    color: red;
+    color: #F76C6C;
     /* A METTRE A LA CHARTE */
 }
 
@@ -12,8 +13,8 @@ h2 {
     padding: 5px;
 
     /* A METTRE A LA CHARTE */
-    background-color: beige;
-    color: royalblue;
+    background-color: #404A53;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     /* A METTRE A LA CHARTE */
 }
@@ -26,6 +27,11 @@ form {
 
 .form-element {
     margin: 5px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 body {
@@ -41,37 +47,38 @@ body {
     text-align: center;
 }
 
-.first-button {
+button {
     /* A METTRE A LA CHARTE */
-    background-color: purple;
-    border-color: red;
+    background-color: #F76C6C;
+    border: 1px solid #404A53;
     font-weight: 500;
     /* A METTRE A LA CHARTE */
 
+    color: white;
+    font-size: 20px;
     padding: 3px 15px;
     border-radius: 8px;
+    opacity: 0.9;
 }
 
-.first-button:hover {
-    box-shadow: 0 0.5em 0.5em 0;
-    opacity: 0.5;
+button:hover {
+    box-shadow: 0 0.2em 0.2em 0;
+    opacity: 1;
+    font-weight: 900;
 }
 
 .excuses-bidons {
-    height: 20em;
+    height: 17em;
     text-align: center;
-
-    /* A METTRE A LA CHARTE */
-    background-color: greenyellow;
-    /* A METTRE A LA CHARTE */
+    background-color: rgba(132, 145, 146, 50%);
 }
 
 .form-element {
-    width: 50vw;
+    width: 65vw;
     display: flex;
     justify-content: space-between;
 }
-
+/* 
 .btn {
     background-color: pink;
 }
@@ -79,4 +86,4 @@ body {
 .btn:hover {
     background-color: pink;
     opacity: 0.5;
-}
+} */
