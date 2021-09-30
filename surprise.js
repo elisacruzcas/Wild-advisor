@@ -1,4 +1,5 @@
 const excuse = document.querySelector('.excuse')
+const excuseBox = document.querySelector('.excuses-bidons')
 const excuseButton = document.getElementsByClassName('btn')
 
 const characters = ['Linus Torvalds', 'un homme en costume de Pikachu', 'le prof de data', 'Kad Merad', 'un témoin de Jéhovah', 'Jacques Chirac', 'un chat noir', "une bactérie de l'évier", 'Thomas', 'Paul-Emmanuel']
@@ -14,6 +15,8 @@ excuseButton[0].addEventListener('click', function(){
     let objNum = Math.floor(Math.random()*objects.length)
     let sentence = 'Désolé de mon retard, mais ' + characters[charNum] + ' ' + verbs[verNum] + ' ' + objects[objNum]
 
+    excuseBox.style.height = '17em'
     excuseElement.innerHTML = sentence;
+    excuseButton[0].innerHTML = 'AUTRE EXCUSE'
     excuse.appendChild(excuseElement);
 })
