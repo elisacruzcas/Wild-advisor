@@ -1,8 +1,10 @@
+@import './fonts.css';
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    color: #F76C6C;
+    font-family: var(--main-font-family);
+    color: var(--main-wcs-color);
+    
 }
 
 h2 {
@@ -10,7 +12,7 @@ h2 {
     padding: 5px;
     background-color: #404A53;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--main-font-family);
 }
 
 form {
@@ -30,7 +32,7 @@ label {
 }
 
 select {
-    color:#F76C6C;
+    color: var(--main-wcs-color);
     font-weight: 600;
     border-radius: 5px;
 }
@@ -46,17 +48,20 @@ body {
     color: white;
     font-weight: bold;
     text-align: center;
+    font-family: var(--main-font-family);   
 }
 
 button {
-    background-color: #F76C6C;
+    background-color: var(--main-wcs-color);
     border: 1px solid #404A53;
     font-weight: 500;
     color: white;
     font-size: 20px;
     padding: 3px 15px;
     border-radius: 8px;
-    opacity: 0.9;
+    opacity: 0.9;    
+    font-family: var(--main-font-family);
+
 }
 
 button:hover {
@@ -69,12 +74,14 @@ button:hover {
     height: 13em;
     text-align: center;
     background-color: rgba(132, 145, 146, 50%);
+    font-family: var(--second-font-family);
 }
 
 .form-element {
     width: 65vw;
     display: flex;
     justify-content: space-between;
+    font-family: var(--second-font-family);
 }
 
 .search-results {
