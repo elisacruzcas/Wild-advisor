@@ -1,22 +1,16 @@
 h1 {
     text-align: center;
     text-transform: uppercase;
-
-    /* A METTRE A LA CHARTE */
     font-family: 'Courier New', Courier, monospace;
     color: #F76C6C;
-    /* A METTRE A LA CHARTE */
 }
 
 h2 {
     text-align: center;
     padding: 5px;
-
-    /* A METTRE A LA CHARTE */
     background-color: #404A53;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    /* A METTRE A LA CHARTE */
 }
 
 form {
@@ -31,7 +25,14 @@ form {
 
 label {
     text-transform: uppercase;
+    color: #404A53;
     font-weight: 700;
+}
+
+select {
+    color:#F76C6C;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 body {
@@ -48,12 +49,9 @@ body {
 }
 
 button {
-    /* A METTRE A LA CHARTE */
     background-color: #F76C6C;
     border: 1px solid #404A53;
     font-weight: 500;
-    /* A METTRE A LA CHARTE */
-
     color: white;
     font-size: 20px;
     padding: 3px 15px;
@@ -78,12 +76,3 @@ button:hover {
     display: flex;
     justify-content: space-between;
 }
-/* 
-.btn {
-    background-color: pink;
-}
-
-.btn:hover {
-    background-color: pink;
-    opacity: 0.5;
-} */
