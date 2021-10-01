@@ -1,14 +1,14 @@
 #template {
-    display: visible; /*to change to none when everything's done*/
+    display: none; /*to change to none when everything's done*/
 }
 
 * {
     box-sizing: border-box;
   }
-  body {
+
+body {
     padding: 0;
     margin: 0;
-    
   }
 
 header {
@@ -24,16 +24,136 @@ header {
     border: 1px solid;
 }
 
-/* .space {
-    height: 1em;
-    border: red 1px solid;
-} */
-
 .cards {
     display: flex;
     margin-top: 10px;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    background-color: gray;
+    height: auto;
+    
 }
+
+.card {
+    width: 100%;
+    max-height: 30em;
+}
+
+.card-header {
+    display: grid; 
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-enseigne {
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+.trajet {
+    background-color: gray;
+    position: absolute;
+    display: grid;
+    align-self: end;
+    justify-self: end;   
+}
+
+.card-body {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 10fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.nom-enseigne {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.style-enseigne {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.prix-enseigne {
+    grid-column: 5;
+    grid-row: 2;
+    justify-self: end;
+}
+
+.avis-enseigne {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.maps-enseigne {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* .btn-open-card {
+    grid-column: 5;
+    grid-row: 3;
+} */
+
+.card-body button {
+    grid-column: 5;
+    grid-row: 3;
+}
+
+
+/* .btn-open-card, .btn-close-card, .maps-enseigne {
+     font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px; 
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border: 1px solid;
+} */
+
+.descript-enseigne {
+    visibility: collapse;
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-auto-columns: minmax(10px, auto);
+    font-size: x-small;
+    margin-bottom: 10px;
+}
+
+.descript-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.descript-paiement {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.descript-site {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.descript-coord {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.btn-close-card {
+    grid-column: 5;
+    grid-row: 3;
+}
+

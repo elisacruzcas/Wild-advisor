@@ -5,25 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="place-style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <title>Sur Place</title>
 </head>
 <body>
     <header>
         <h1>Header</h1>
       </header>
-      <div class="title">
+      <div class="title"> Sur place 
       </div>
-      <div class="space"></div>
+      
 
 
       <div class="cards">
-        <div class="card" id='template'>
-          <div class="card-img">
-            <div class="card?"></div>
+        <div class="card" id='template'> 
+          <div class="card-header">
+            <div class="card-img">
+            <img class="image-enseigne" src= "burgerLutece.jpg" alt="image d'illustration"></div>
+            <div class="trajet">5 Min</div>
           </div>
           <div class="card-body">
-            <h2 class="card-title"></h2>
-            
+            <div class="nom-enseigne">Burger Lutece</div>
+            <div class="style-enseigne"> Burger</div>
+            <div class="prix-enseigne">€€</div>
+            <div class="avis-enseigne"></div>
+            <div class="maps-enseigne"><a class="maps-link" href="link vers itinéraire"></a></div>
+            <button class="btn-open-card" onclick="openCardDiv()">&#xe313</button>
+          </div>
+          <div class="descript-enseigne">
+            <div class="descript-text">Le spectacle du soir est chaudement recommandé par Thomas, notre maître à tous.</div>
+            <div class="descript-paiement"> Espéces</div>
+            <div class="descript-coord">99 rue Dupont Lajoie
+              0123456789 </div>
+              <a class="descript-site" href="jaifaim.com">
+            <button class="btn-close-card" onclick='closeCardDiv()'>&#xe316</button>
           </div>
         </div>
       </div>
