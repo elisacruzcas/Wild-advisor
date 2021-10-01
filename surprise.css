@@ -97,30 +97,18 @@ html {
     margin: 0;
   }
 
-.footer a {
+footer {
     display: flex;
     justify-content: flex-end;
     padding: 2%;
-    color: white;
-    font-family: var(--second-font-family);
-    
-  }
 
-
-
-/* 
-  html {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
     background-color: var(--light-gray);
-    margin: 0;
-  }
+    /* NE MARCHE PAS, CHERCHER COMMENT METTRE UN LIEN PAR DEFAUT EN BLANC, SOULIGNE UNIQUEMENT SUR HOVER */
+    color: white;
 
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2%;
-    background-color: white;
-  } */
+
+    font-family: var(--second-font-family);
+
+
+
+  }
