@@ -3,6 +3,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    
    
 
 }
@@ -22,17 +24,28 @@ footer {
 }
 
 #surPlace {
-    background-image: url(assets/place_5.jpeg);
+    background-image: url(assets/place_5.jpeg) ; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+   
 }
 
 #surLePouce {
-    background-image: url(assets/pouce_1.jpeg);
+    background-image: url(assets/pouce_4.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    im
 }
 
 #jaiSoif {
     background-image: url(assets/soif_3.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #surprendsMoi {
     background-image: url(assets/surprise_3.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
