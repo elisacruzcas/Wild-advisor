@@ -1,9 +1,9 @@
-html, body {
+html {
     height: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    background-color: rgba(64, 74, 83, 1);
+    background-color: var(--light-gray);
     margin: 0;
   }
 

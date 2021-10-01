@@ -4,8 +4,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Stick+No+Bills&display=swap" rel="stylesheet"> */
 
+
+
 :root {
     --main-font-family: 'Stick No Bills', sans-serif;
     --main-wcs-color: #F76C6C;
+    --light-gray: #849192;
+    --dark-gray: #404A53;
     --second-font-family: 'Roboto', sans-serif; 
 }

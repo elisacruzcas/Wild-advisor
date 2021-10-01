@@ -10,7 +10,7 @@ h1 {
 h2 {
     text-align: center;
     padding: 5px;
-    background-color: #404A53;
+    background-color: var(--light-gray);
     color: white;
     font-family: var(--main-font-family);
 }
@@ -27,20 +27,14 @@ form {
 
 label {
     text-transform: uppercase;
-    color: #404A53;
-    font-weight: 700;
+    color: white;
+    font-weight: bold;
 }
 
 select {
     color: var(--main-wcs-color);
     font-weight: 600;
     border-radius: 5px;
-}
-
-body {
-    /* A METTRE A LA CHARTE */
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    /* A METTRE A LA CHARTE */
 }
 
 .form-button{
@@ -89,3 +83,25 @@ button:hover {
     background-color: rgba(132, 145, 146, 50%);
     display: none;
 }
+
+
+
+/* FOOTER-SPECIFIC CSS  */
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: var(--dark-gray);
+    margin: 0;
+  }
+
+.footer a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    color: white;
+    font-family: var(--second-font-family);
+    
+  }
