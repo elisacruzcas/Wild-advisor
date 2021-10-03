@@ -1,0 +1,116 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+  li {
+    float: right;
+  } 
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: grey;
+    
+  }
+  .active {
+    background-color: white;
+  }
+ h1 {
+   font-size: 328%;
+   color: white;
+   padding-top: 45px;
+  height: 100px;
+  text-align: center;
+  background-image: url("media/placeholder.jpeg");
+  margin-left: -6px;
+  scroll-margin-right: -6px;
+  }
+  
+  .leproject {
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: justify;
+  text-justify: inter-word;
+  }
+
+h2 {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+h3 {
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+  img {
+   
+    margin-bottom: 155px;
+    margin: -8px;
+    width: 34.26%;
+    height: 299px;
+    object-fit: cover;
+}
+div.teamone {
+  width: 100%;
+}
+
+h4 {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+form,
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: initial;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 60%;
+  padding: 1rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  transition: border 0.15s;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  height: 1.6rem;
+
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  height: 70px;
+  text-align: right;
+  color: white;
+  width: 100%;
+  background-color: black;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.textfooter {
+  padding-right: 30px;
+  font-size: 150%;
+}
