@@ -8,8 +8,8 @@
 
 :root {
     --main-font-family: 'Stick No Bills', sans-serif;
+    --second-font-family: 'Roboto', sans-serif; 
     --main-wcs-color: #F76C6C;
     --light-gray: #849192;
     --dark-gray: #404A53;
-    --second-font-family: 'Roboto', sans-serif; 
 }

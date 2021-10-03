@@ -1,9 +1,13 @@
 // SEARCH ENGINE PART
 const results = document.querySelector('.search-results')
 const resultsButton = document.querySelector('.first-button')
+const closeButton = document.querySelector('.close-button')
 
 resultsButton.addEventListener('click', function(){
     results.style.display = 'block'
+})
+closeButton.addEventListener('click', function(){
+    results.style.display = 'none'
 })
 
 

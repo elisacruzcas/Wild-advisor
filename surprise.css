@@ -79,9 +79,17 @@ button:hover {
 }
 
 .search-results {
-    height: 13em;
     background-color: rgba(132, 145, 146, 50%);
     display: none;
+}
+
+.results-elements {
+    height: 13em;
+}
+
+.close-button {
+    border-radius: 100%;
+    margin: 5px auto;
 }
 
 
