@@ -1,7 +1,7 @@
-
-const menuBtn = document.querySelector('icon-menu');
+const dropdown = document.getElementsByClassName('menu');
+const menuBtn = document.getElementsByClassName('icon-menu');
 let menuOpen = false;
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', function(){
   if (!menuOpen) {
      menuBtn.classList.add('open');
       menuOpen = true;
