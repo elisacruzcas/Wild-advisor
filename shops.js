@@ -1,18 +1,19 @@
-import shops  from './information.js';
+import shops  from './shops-infos.js';
+
 
 const cards = document.querySelector(".cards");
 
-function createCard(parameter) {   // TODO rajouter autres éléments de shops dans la fonction
+function createCard(parameter) {   
 
   function openCardDiv(parameter) {
     console.log('coucou');
-      document.getElementById(`descriptEnseigne${parameter.id}`).style.visibility = 'visible';
+      document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'grid';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'hidden';
   }
   
   function closeCardDiv(parameter) {
     console.log('bye')
-      document.getElementById(`descriptEnseigne${parameter.id}`).style.visibility = 'collapse';
+      document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'none';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'visible';
   }
   
@@ -71,14 +72,13 @@ function createCard(parameter) {   // TODO rajouter autres éléments de shops d
   const mapsLink = document.createElement('a');
   mapsLink.classList.add('maps-link');
   mapsLink.href = parameter.urlItineraire;
-  mapsLink.innerHTML = "<img src=\'map.svg'>";
+  mapsLink.className = "material-icons";
+  mapsLink.innerHTML = "&#xe55b";
   mapsEnseigne.appendChild(mapsLink);
   
-  
-
   const btnOpenCard = document.createElement('button');
   btnOpenCard.setAttribute('id', `btnOpen${parameter.id}`);
-    btnOpenCard.onclick = () => openCardDiv(parameter);
+  btnOpenCard.onclick = () => openCardDiv(parameter);
   btnOpenCard.className = "material-icons";
   btnOpenCard.innerHTML = "&#xe313";
   btnOpenCard.classList.add('btn-open-card');
@@ -94,33 +94,43 @@ function createCard(parameter) {   // TODO rajouter autres éléments de shops d
   descriptText.innerHTML = parameter.description;
   descriptEnseigne.appendChild(descriptText);
 
-  const descriptPaiement = document.createElement('div');
-  descriptPaiement.classList.add('descript-paiement');
-  descriptPaiement.innerHTML = parameter.paiement;
-  descriptEnseigne.appendChild(descriptPaiement);
-
   const descriptCoord = document.createElement('div');
   descriptCoord.classList.add('descript-coord');
   descriptCoord.innerHTML = `${parameter.coordonnees} - ${parameter.phone}`;
   descriptEnseigne.appendChild(descriptCoord);
 
-  const descriptSite = document.createElement('a');
-  descriptSite.classList.add('descript-site');
-  descriptSite.href = parameter.site;
-  descriptSite.innerHTML = "Site";
-  descriptEnseigne.appendChild(descriptSite);
+
+  if (parameter.site != "") {
+    const descriptSite = document.createElement('a');
+    descriptSite.classList.add('descript-site');
+    descriptSite.href = parameter.site;
+    descriptSite.innerHTML = "Site";
+    descriptEnseigne.appendChild(descriptSite);
+  }
 
   const btnCloseCard = document.createElement('button');
   btnCloseCard.setAttribute('id', `btnClose${parameter.id}`);
-    btnCloseCard.onclick =() => closeCardDiv(parameter);
-    btnOpenCard.className = "material-icons";
-    btnCloseCard.innerHTML = "&#xe313";
+  btnCloseCard.onclick =() => closeCardDiv(parameter);
+  btnCloseCard.className = "material-icons";
+  btnCloseCard.innerHTML = "&#xe316";
   btnCloseCard.classList.add('btn-close-card');
   descriptEnseigne.appendChild(btnCloseCard);
 }
 
+
+
+const titleName = document.querySelector('.title');
+
 for (let i = 0; i < shops.length; i++) {
-    createCard(shops[i]);
+  if (titleName.id == 'place' && shops[i].category.includes('restaurant')) { 
+  createCard(shops[i]);
+  } 
+  else if (titleName.id == 'boire' && shops[i].category.includes('boire')) {
+  createCard(shops[i]);
+  }
+  else if (titleName.id == 'snacking' && shops[i].category.includes('snacking')) {
+  createCard(shops[i]);
+}
 }
 
 
@@ -133,44 +143,3 @@ for (let i = 0; i < shops.length; i++) {
 
 
   
-
-//   const cardImg = document.createElement("div");
-//   cardImg.style.backgroundImage = `url(${parameter.picture})`;
-//   cardImg.classList.add("card-img");
-//   cardHeader.appendChild(cardImg);
-
-//   const cardBody = document.createElement("div");
-//   cardBody.classList.add("card-body");
-//   card.appendChild(cardBody);
-
-//   const cardTitle = document.createElement("h2");
-//   cardTitle.classList.add("card-title");
-//   cardTitle.innerHTML = parameter.name;
-//   cardBody.appendChild(cardTitle);
-
-//   const cardButton = document.createElement("button");
-//   cardButton.classList.add("details");
-//   cardButton.innerHTML = "touch to see details";
-//   cardBody.appendChild(cardButton);
-
-//   const cardPrice = document.createElement('div');
-//   cardPrice.classList.add('details');
-//   cardPrice.innerHTML = parameter.price_range;
-//   cardBody.appendChild(cardPrice);
- 
-//   const cardRatings = document.createElement('div');
-//   cardRatings.classList.add('details');
-//   cardRatings.innerHTML = parameter.ratings;
-//   cardBody.appendChild(cardRatings);
-
-//   const cardTrajet = document.createElement('div');
-//   cardTrajet.classList.add('details');
-//   cardTrajet.innerHTML = parameter.trajet;
-//   cardBody.appendChild(cardTrajet);
-
-
-// }
-
-// for (let i = 0; i < shops.length; i++) {
-//     createCard(shops[i]);
-// }
