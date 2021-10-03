@@ -89,20 +89,30 @@ button:hover {
 /* FOOTER-SPECIFIC CSS  */
 
 html {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
     flex-direction: column;
     background-color: var(--dark-gray);
     margin: 0;
+    height: 100%;
+    margin: 0;
   }
 
+main {
+    padding: 5px;
+    min-height: 100%;
+    margin: 0 auto -3vh;
+}
+
 footer {
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
     padding: 2%;
+    height: 3vh;
+
 
     background-color: var(--light-gray);
+
+
+
+
     /* NE MARCHE PAS, CHERCHER COMMENT METTRE UN LIEN PAR DEFAUT EN BLANC, SOULIGNE UNIQUEMENT SUR HOVER */
     color: white;
 
