@@ -6,13 +6,11 @@ const cards = document.querySelector(".cards");
 function createCard(parameter) {   
 
   function openCardDiv(parameter) {
-    console.log('coucou');
       document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'grid';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'hidden';
   }
   
   function closeCardDiv(parameter) {
-    console.log('bye')
       document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'none';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'visible';
   }
