@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="surprise.css"/>
+    <link rel="stylesheet" type="text/css" href="fonts.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Stick+No+Bills&display=swap" rel="stylesheet">
+    <title>Simulateur et excuses bidons | Wild Advisor</title>
+</head>
+<body>
+    <header></header>
+    
+    <h1 class="title">Surprends-moi</h1>
+    
+    <h2 class="subtitle">Trouve l'établissement qui te correspond le mieux</h2>
+    
+    <form>
+        <div class="box">
+            <div class="form-element">
+                <label for="price">Prix</label>
+                <select name="price" id="price-select">
+                    <option value="none">Peu importe</option>
+                    <option value="€">€</option>
+                    <option value="€€">€€</option>
+                    <option value="€€€">€€€</option>
+                </select>
+            </div>
+            
+            <div class="form-element">
+                <label for="distance">Distance</label>
+                <select name="distance" id="distance-select">
+                    <option value="none">Peu importe</option>
+                    <option value="€">5 min</option>
+                    <option value="€€">10 min</option>
+                    <option value="€€€">15 min</option>
+                </select>
+            </div>
+            
+            <div class="form-element">
+                <label for="rating">Avis</label>
+                <select name="rating" id="rating-select">
+                    <option value="none">Peu importe</option>
+                    <option value="€">*** ou plus</option>
+                    <option value="€€">**** ou plus</option>
+                    <option value="€€€">*****</option>
+                </select>
+            </div>
+        </div>        
+    </form>
+    <div class="form-button"><button class="first-button">RECHERCHER</button></div>
+    
+    
+    <div class="search-results"><h2>Résultats</h2>
+        <div class="results-elements">
+
+        </div>
+    </div>
+    
+    <div class="excuses-bidons">
+        <h2 class="subtitle">Simulateur d'excuses bidons</h2>
+            <p>Tu vas arriver en retard au Campus ? Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
+    
+            <button class="btn">SORS UNE EXCUSE</button>
+
+            <div class="excuse"></div>
+
+    </div>
+    
+
+
+
+    <script src="surprise.js"></script>
+
+    
+    <footer></footer>
+</body>
+</html>

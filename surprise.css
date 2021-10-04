@@ -1,0 +1,91 @@
+@import './fonts.css';
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    color: var(--main-wcs-color);
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    background-color: #404A53;
+    color: white;
+    font-family: var(--main-font-family);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-element {
+    margin: 5px;
+}
+
+label {
+    text-transform: uppercase;
+    color: #404A53;
+    font-weight: 700;
+}
+
+select {
+    color: var(--main-wcs-color);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+body {
+    /* A METTRE A LA CHARTE */
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    /* A METTRE A LA CHARTE */
+}
+
+.form-button{
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--main-font-family);   
+}
+
+button {
+    background-color: var(--main-wcs-color);
+    border: 1px solid #404A53;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    padding: 3px 15px;
+    border-radius: 8px;
+    opacity: 0.9;    
+    font-family: var(--main-font-family);
+
+}
+
+button:hover {
+    box-shadow: 0 0.2em 0.2em 0;
+    opacity: 1;
+    font-weight: 900;
+}
+
+.excuses-bidons {
+    height: 13em;
+    text-align: center;
+    background-color: rgba(132, 145, 146, 50%);
+    font-family: var(--second-font-family);
+}
+
+.form-element {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--second-font-family);
+}
+
+.search-results {
+    height: 13em;
+    background-color: rgba(132, 145, 146, 50%);
+    display: none;
+}
