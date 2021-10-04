@@ -25,7 +25,7 @@ ul {
    font-size: 328%;
    color: white;
    padding-top: 45px;
-  height: 100px;
+  height: 150px;
   text-align: center;
   background-image: url("media/placeholder.jpeg");
   margin-left: -6px;
@@ -57,21 +57,25 @@ h3 {
     height: 299px;
     object-fit: cover;
 }
-div.teamone {
-  width: 100%;
-}
+
 
 h4 {
   margin-top: 35px;
   text-align: center;
   margin-bottom: 35px;
 }
-form,
-input,
-textarea,
-button {
-  font-family: inherit;
-  font-size: initial;
+#contact {
+  width: 500px;
+  margin: 0 auto;
+font-size: 200%;
+}
+#objet {
+margin-left: 50px;
+}
+
+
+#message {
+  margin-left: 10px;
 }
 
 .form-group input[type="text"],
@@ -83,17 +87,12 @@ button {
   outline: 0;
   transition: border 0.15s;
   margin-bottom: 25px;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 .form-group input[type="text"],
 .form-group input[type="email"] {
-  height: 1.6rem;
-
+  height: 0.5rem;
 }
-.form-group textarea {
-  resize: vertical;
-}
-
 footer {
   position: fixed;
   left: 0;
@@ -107,10 +106,11 @@ footer {
 }
 
 button {
+  font-size: 60%;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 .textfooter {
   padding-right: 30px;
-  font-size: 150%;
+  font-size: 180%;
 }
