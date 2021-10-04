@@ -10,7 +10,7 @@ h1 {
 h2 {
     text-align: center;
     padding: 5px;
-    background-color: #404A53;
+    background-color: var(--dark-gray);
     color: white;
     font-family: var(--main-font-family);
 }
@@ -27,20 +27,14 @@ form {
 
 label {
     text-transform: uppercase;
-    color: #404A53;
-    font-weight: 700;
+    color: white;
+    font-weight: 800;
 }
 
 select {
     color: var(--main-wcs-color);
     font-weight: 600;
     border-radius: 5px;
-}
-
-body {
-    /* A METTRE A LA CHARTE */
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    /* A METTRE A LA CHARTE */
 }
 
 .form-button{
@@ -54,7 +48,7 @@ body {
 button {
     background-color: var(--main-wcs-color);
     border: 1px solid #404A53;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     font-size: 20px;
     padding: 3px 15px;
@@ -73,7 +67,7 @@ button:hover {
 .excuses-bidons {
     height: 13em;
     text-align: center;
-    background-color: rgba(132, 145, 146, 50%);
+    background-color: var(--light-gray);
     font-family: var(--second-font-family);
 }
 
@@ -85,7 +79,54 @@ button:hover {
 }
 
 .search-results {
-    height: 13em;
     background-color: rgba(132, 145, 146, 50%);
     display: none;
 }
+
+.results-elements {
+    height: 13em;
+}
+
+.close-button {
+    border-radius: 100%;
+    margin: 5px auto;
+}
+
+
+
+/* COMMON CSS  */
+
+html {
+    flex-direction: column;
+    background-color: var(--darker-gray);
+    margin: 0;
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+    padding: 5px;
+    min-height: 100%;
+    margin: 0 auto -10px;
+}
+
+footer {
+    padding: 5px 25px 5px 5px;
+    background-color: var(--dark-gray);
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } 
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--second-font-family);
+    font-weight: 800;
+    padding-right: 20px; /* to fix label offset */
+}
+
+  footer a:hover {
+      text-decoration: underline;
+  }
