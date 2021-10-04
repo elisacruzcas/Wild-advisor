@@ -20,11 +20,6 @@ header nav {
     background: #fff;
 }
 
-nav ul a {
-    float: left;
-   
-}
-
 .menu_bar span {
     float:right;
     font-size: 50px;
@@ -40,9 +35,12 @@ nav ul a {
     cursor: pointer;
 }
 
-nav ul li a {
-    position: right;
+li {
+    list-style: none;
 }
+
+
+
 
  /* .menu {
     position: fixed;
