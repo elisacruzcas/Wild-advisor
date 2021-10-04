@@ -45,16 +45,15 @@ header {
 }
 
 .card-image {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 100%;
+    
 }
-
-
 
 .image-enseigne {
     max-width: 100%;
     height: auto;
-    object-fit:cover;
+    margin-top: 2em;
 }
 
 .trajet {
@@ -170,6 +169,7 @@ header {
     padding: 1em;
 }
 
+
 @media screen and (min-width: 450px) { 
     .card { 
         width: 20em;
@@ -179,11 +179,11 @@ header {
     } 
     .card-header {
         width: 20em;
-        height: 300px;
+        height: auto;
     }
-    .image-enseigne {
-        object-fit: cover;
-    }
+    /* .image-enseigne {
+        object-fit: contain;
+    } */
     .trajet {
         align-self: start;
         justify-self: end; 
