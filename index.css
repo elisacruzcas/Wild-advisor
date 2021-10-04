@@ -27,6 +27,8 @@ footer {
     background-image: url(/assets/place_5.jpeg) ; 
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+   
 
    
 }
@@ -42,7 +44,7 @@ footer {
 }
 
 #surprendsMoi {
-    background-image: url(/assets/surprise_3.jpeg);
+    background-image: url(/assets/surprise_4.jpg);
  
 }
 
@@ -51,12 +53,29 @@ footer {
     height: 20%;
     width: 20%;
     justify-content: left;
+
     
 }
 
 #titleLogo {
  justify-content: center;
-
+ 
 
 }
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    background-color: white;
+  }
+
+  html, body {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: rgba(64, 74, 83, 1);
+    margin: 0;
+  }
 
