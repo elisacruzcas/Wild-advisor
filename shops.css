@@ -1,0 +1,191 @@
+#template {
+    display: none; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+
+header {
+    color: white;
+    text-align: center;
+    margin: -25px -20px 0px -20px;
+    height: 3em;
+    background-color: black;
+}
+
+.title {
+    height: 3em;
+    border: 1px solid;
+}
+
+.cards {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;  
+    flex-direction: row;
+}
+
+.card {
+    width: 100%;
+    max-height: 35em;
+    margin-top: 2em;
+}
+
+.card-header {
+    display: grid; 
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.image-enseigne {
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+.trajet {
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    display: grid;
+    align-self: end;
+    justify-self: end; 
+    margin-right: 20px;
+    margin-bottom: 10px;  
+}
+
+.card-body {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 10fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.nom-enseigne {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding: 0%;
+}
+
+.style-enseigne {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    font-size: small;
+}
+
+.prix-enseigne {
+    grid-column: 5;
+    grid-row: 2;
+    justify-self: end;
+}
+
+.avis-enseigne {
+    grid-column: 5;
+    grid-row: 1;
+    color: orange;
+    font-weight: bold;
+    font-size: x-large;
+    direction: rtl;
+    padding: 0;
+}
+
+.maps-enseigne {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+.card-body button {
+    grid-column: 5;
+    grid-row: 3;
+}
+
+
+.material-icons {
+     font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px; 
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border: none;
+    outline: none;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+} 
+
+.descript-enseigne {
+    display: none;
+    grid-auto-rows: minmax(10px, auto);
+    grid-auto-columns: minmax(10px, auto);
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+.descript-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.descript-paiement {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.descript-site {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.descript-coord {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.btn-close-card {
+    grid-column: 4;
+    grid-row: 3;
+    padding: 1em;
+}
+
+@media screen and (min-width: 450px) { 
+    .card { 
+        width: 20em;
+        max-height: 35em;
+        margin: 3em;
+        border: solid 1px red;
+    } 
+    .card-header {
+        width: 20em;
+        height: 300px;
+    }
+    .image-enseigne {
+        object-fit: cover;
+    }
+    .trajet {
+        align-self: start;
+        justify-self: end; 
+    }
+  }
