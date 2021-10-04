@@ -1,0 +1,17 @@
+/* Mettre dans head du html 
+    ROBOTO + STICK NO BILLS
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Stick+No+Bills&display=swap" rel="stylesheet"> */
+
+
+
+:root {
+    --main-font-family: 'Stick No Bills', sans-serif;
+    --second-font-family: 'Roboto', sans-serif; 
+    --main-wcs-color: #F76C6C;
+    --lighter-gray: #849192;
+    --light-gray: #6b6b6b;
+    --dark-gray: #2b2b2b;
+    --darker-gray: #1D1D1D;
+}
