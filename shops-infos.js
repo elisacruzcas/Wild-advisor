@@ -125,7 +125,7 @@ const shops = [
   {
     id: "09",
     name: "Aux Petits Oignons",
-    picture: "shops-assets/oignons.png",
+    picture: "shops-assets/oignons.jpg",
     category: ["restaurant", "boire", "snacking"],
     price_range: "€€",
     ratings: "⯪★★★★",
@@ -155,7 +155,7 @@ const shops = [
   {
     id: "11",
     name: "La Gambette à Pain",
-    picture: "shops-assets/gambette.webp",
+    picture: "shops-assets/gambette.jpg",
     category: ["snacking"],
     price_range: "€€",
     ratings: "★★★★",
@@ -170,7 +170,7 @@ const shops = [
   {
     id: "12",
     name: "Huitzilin",
-    picture: "shops-assets/huitzilin.webp",
+    picture: "shops-assets/huitzilin.jpg",
     category: ["restaurant", "snacking"],
     price_range: "€€",
     ratings: "⯪★★★★",
@@ -200,7 +200,7 @@ const shops = [
   {
     id: "14",
     name: "La Contrebande",
-    picture: "shops-assets/contrebande.webp",
+    picture: "shops-assets/contrebande.jpg",
     category: ["restaurant"],
     price_range: "€€",
     ratings: "⯪★★★★",
@@ -230,7 +230,7 @@ const shops = [
   {
     id: "16",
     name: "Le Palais de Pelleport",
-    picture: "shops-assets/palais.jpeg",
+    picture: "shops-assets/palais.jpg",
     category: ["restaurant", "snacking"],
     price_range: "€",
     ratings: "⯪★★★★",
