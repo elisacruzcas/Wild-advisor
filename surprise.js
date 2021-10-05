@@ -1,3 +1,21 @@
+// HEADER
+const menuList = document.getElementsByClassName('menu');
+const menuBtn = document.getElementsByClassName('icon-menu');
+
+menuBtn[0].addEventListener('click', function(){
+ if (menuList[0].style.display == "none"){
+ menuList[0].style.display = "block"}
+ else {
+ menuList[0].style.display = "none"
+ }
+})
+
+
+
+
+
+
+
 // BAD EXCUSES PART
 const characters = ['Tu Duy',
 'Linus Torvalds',
@@ -20,7 +38,8 @@ const verbs = ['a volé',
 "voulait s'enfuir de la Wild avec", 
 'revendait des faux pass sanitaires contre', 
 "m'a fait passer la douane en cachant", 
-"m'a proposé de tourner un film sur", 'me poursuivait avec']
+"m'a proposé de tourner un film sur", 
+'me poursuivait avec']
 
 const objects = ['mon dernier ticket de métro', 
 'mes chaussures', 
