@@ -38,7 +38,8 @@ const verbs = ['a volé',
 "voulait s'enfuir de la Wild avec", 
 'revendait des faux pass sanitaires contre', 
 "m'a fait passer la douane en cachant", 
-"m'a proposé de tourner un film sur", 'me poursuivait avec']
+"m'a proposé de tourner un film sur", 
+'me poursuivait avec']
 
 const objects = ['mon dernier ticket de métro', 
 'mes chaussures', 
