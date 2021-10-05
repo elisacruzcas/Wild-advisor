@@ -50,14 +50,60 @@ h3 {
   margin-bottom: 55px;
 }
   img {
-   
     margin-bottom: 155px;
     margin: -8px;
     width: 34.26%;
     height: 299px;
     object-fit: cover;
+  }
+
+#teamfont {
+font-size: 140%;
+color: white;
 }
 
+#teamfontdos {
+  font-size: 140%;
+  color: white;
+  }
+
+
+.teamuno {
+  display: none;
+  position: absolute;
+  bottom: 320px;
+  left: 120px;
+}
+.teamdos {
+  position: absolute;
+  bottom: 320px;
+  left: 420px;
+  display: none;
+}
+.teamtres {
+  position: absolute;
+  bottom: 320px;
+  left: 725px;
+  display: none;
+}
+
+.teamcuatro {
+  position: absolute;
+  bottom: -10px;
+  left: 90px;
+}
+.teamcinco {
+  position: absolute;
+  bottom: -10px;
+  left: 420px;
+  display: none;
+}
+.teamseis {
+  position: absolute;
+  bottom: -10px;
+  left: 725px;
+  display: none;
+}
 
 h4 {
   margin-top: 35px;
