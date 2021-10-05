@@ -132,7 +132,7 @@ for (let i = 0; i < shops.length; i++) {
   else if (titleName.id == 'snacking' && shops[i].category.includes('snacking')) {
   createCard(shops[i]);
 }
-}
+} 
 
 
 

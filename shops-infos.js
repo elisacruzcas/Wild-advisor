@@ -275,4 +275,4 @@ const shops = [
 ];
 
 
-export default shops;
+export default shops; 
