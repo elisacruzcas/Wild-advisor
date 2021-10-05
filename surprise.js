@@ -1,15 +1,12 @@
 // HEADER
-const menuList = document.getElementsByClassName('menu');
-const menuBtn = document.getElementsByClassName('icon-menu');
-
-menuBtn[0].addEventListener('click', function(){
- if (menuList[0].style.display == "none"){
- menuList[0].style.display = "block"}
- else {
- menuList[0].style.display = "none"
- }
-})
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  } 
 
 
 
@@ -54,8 +51,6 @@ const objects = ['mon dernier ticket de métro',
 
 
 // A RETRAVAILLER
-// const newData = require('./data.js');
-// const {characters, verbs, objects} = newData;
 
 const excuse = document.querySelector('.excuse')
 const excuseBox = document.querySelector('.excuses-bidons')
