@@ -65,7 +65,6 @@ header {
 .card {
     width: 100%;
     max-height: 35em;
-    /* margin-top: 2em; */
     margin-bottom: 4em;
     background-color: var(--light-gray);
 }
@@ -77,13 +76,11 @@ header {
 .card-image {
     width: auto;
     max-height: 100%;
-    
 }
 
 .image-enseigne {
     max-width: 100%;
-    height: auto;
-    
+    height: auto;  
 }
 
 .trajet {
@@ -99,8 +96,6 @@ header {
 
 .card-body {
     position: relative;
-    /* margin-top: 10px; */
-    /* margin-bottom: 15px; */
     display: grid;
     grid-template-columns: repeat(5, 10fr);
     gap: 10px;
@@ -144,7 +139,6 @@ header {
 .maps-enseigne {
     grid-column: 1;
     grid-row: 4;
-    
 }
 
 
@@ -169,12 +163,7 @@ header {
     font-size: smaller;
     padding: 1em;
     height: 15em;
-    
 }
-
-
-
-
 
 .descript-text {
     grid-column: 1;
@@ -209,7 +198,6 @@ header {
         width: 20em;
         max-height: 40em;
         margin: 3em;
-        /* border: solid 1px red; */
     } 
     .card-header {
         width: 20em;
@@ -219,8 +207,5 @@ header {
         object-fit: contain;
     }
     
-    .trajet {
-        align-self: end;
-        justify-self: end; 
-    }
+    
   }
