@@ -77,11 +77,11 @@ button:hover {
 
 .search-results {
     background-color: rgba(132, 145, 146, 50%);
-    display: none;
+    display: block;
 }
 
 .results-elements {
-    height: 200px;
+    height: 800px;
 }
 
 .close-button {
@@ -157,8 +157,7 @@ footer a:hover {
   }
   
   .topnav a:hover {
-    background-color: var(--lighter-gray);
-    color: black;
+      background-color: var(--main-wcs-color);
   }
 
   .topnav .icon {
