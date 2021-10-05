@@ -28,6 +28,14 @@
     color: var(--main-wcs-color);
 } 
 
+#logoFavoris {
+    font-size: 35px;
+    border: none;
+    background-color: var(--darker-gray);
+    float: right;
+}
+
+
 body {
     padding: 0;
     margin: 0;
@@ -82,6 +90,8 @@ header {
     max-width: 100%;
     height: auto;  
 }
+
+
 
 .trajet {
     font-weight: bold;

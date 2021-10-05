@@ -116,6 +116,10 @@ function createCard(parameter) {
   btnCloseCard.innerHTML = "&#xe316";
   btnCloseCard.classList.add('btn-close-card');
   descriptEnseigne.appendChild(btnCloseCard);
+
+
+
+  
 }
 
 
@@ -132,7 +136,63 @@ for (let i = 0; i < shops.length; i++) {
   else if (titleName.id == 'snacking' && shops[i].category.includes('snacking')) {
   createCard(shops[i]);
 }
+
+
+
+
+//Favorites feature
+
+function storageAvailable(type) {
+  try {
+      var storage = window[type],
+          x = '__storage_test__';
+      storage.setItem(x, x);
+      storage.removeItem(x);
+      return true;
+  }
+  catch(e) {
+      return e instanceof DOMException && (
+          // everything except Firefox
+          e.code === 22 ||
+          // Firefox
+          e.code === 1014 ||
+          // test name field too, because code might not be present
+          // everything except Firefox
+          e.name === 'QuotaExceededError' ||
+          // Firefox
+          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+          // acknowledge QuotaExceededError only if there's something already stored
+          storage.length !== 0;
+  }
+}
+if (storageAvailable('localStorage')) {
+	// Nous pouvons utiliser localStorage
+  console.log('Let s go')
+const title = document.querySelector('.title');
+const pageFavorite = document.createElement('div');
+pageFavorite.classList.add('title');
+pageFavorite.className = 'material-icons';
+pageFavorite.setAttribute('id', 'logoFavoris');
+pageFavorite.innerHTML = `&#xe87d`;
+title.appendChild(pageFavorite);
+
+
+const setFavBtn = document.createElement('div');
+setFavBtn.className = 'setFavBtn';
+setFavBtn.innerHTML = `&#xe87e`;
+cardHeader.appendChild(setFavBtn);
+
+
+
+}
+else {
+  console.log('Local Storage non disponible')
+}
+
+
 } 
+
+
 
 
 
