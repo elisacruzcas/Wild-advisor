@@ -11,12 +11,18 @@ body {
     background:#849192;
 }
 
+.logo-container {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
 .logo {
     position: absolute;
     margin-top: 0;
     margin-left: 0;
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 header nav {
@@ -40,8 +46,6 @@ header nav {
 }
 
 .menu ul {
-    margin-top:100px;
-    padding: 0;
     display: flex;
     list-style: none;
     flex-direction: column;
