@@ -7,11 +7,13 @@ function createCard(parameter) {
 
   function openCardDiv(parameter) {
       document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'grid';
+      document.getElementById(`cardBody${parameter.id}`).style.display = 'none';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'hidden';
   }
   
   function closeCardDiv(parameter) {
       document.getElementById(`descriptEnseigne${parameter.id}`).style.display = 'none';
+      document.getElementById(`cardBody${parameter.id}`).style.display = 'grid';
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'visible';
   }
   
@@ -40,6 +42,7 @@ function createCard(parameter) {
   cardHeader.appendChild(trajet);
 
   const cardBody = document.createElement('div');
+  cardBody.setAttribute('id', `cardBody${parameter.id}`);
   cardBody.classList.add('card-body');
   card.appendChild(cardBody);
 
@@ -71,19 +74,19 @@ function createCard(parameter) {
   mapsLink.classList.add('maps-link');
   mapsLink.href = parameter.urlItineraire;
   mapsLink.className = "material-icons";
-  mapsLink.innerHTML = "&#xe55b";
+  mapsLink.innerHTML =  "&#xe536";
   mapsEnseigne.appendChild(mapsLink);
   
   const btnOpenCard = document.createElement('button');
   btnOpenCard.setAttribute('id', `btnOpen${parameter.id}`);
   btnOpenCard.onclick = () => openCardDiv(parameter);
   btnOpenCard.className = "material-icons";
-  btnOpenCard.innerHTML = "&#xe313";
+  btnOpenCard.innerHTML =  "&#xe313";
   btnOpenCard.classList.add('btn-open-card');
   cardBody.appendChild(btnOpenCard);
 
   const descriptEnseigne = document.createElement('div');
-  descriptEnseigne.setAttribute('id', `descriptEnseigne${parameter.id}`)
+  descriptEnseigne.setAttribute('id', `descriptEnseigne${parameter.id}`);
   descriptEnseigne.classList.add('descript-enseigne');
   card.appendChild(descriptEnseigne);
 
@@ -94,7 +97,7 @@ function createCard(parameter) {
 
   const descriptCoord = document.createElement('div');
   descriptCoord.classList.add('descript-coord');
-  descriptCoord.innerHTML = `${parameter.coordonnees} - ${parameter.phone}`;
+  descriptCoord.innerHTML = `${parameter.coordonnees} </br> ${parameter.phone}`;
   descriptEnseigne.appendChild(descriptCoord);
 
 
@@ -102,7 +105,7 @@ function createCard(parameter) {
     const descriptSite = document.createElement('a');
     descriptSite.classList.add('descript-site');
     descriptSite.href = parameter.site;
-    descriptSite.innerHTML = "Site";
+    descriptSite.innerHTML = "Site Internet";
     descriptEnseigne.appendChild(descriptSite);
   }
 
