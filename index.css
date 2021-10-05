@@ -161,10 +161,11 @@ footer {
     
     .Logo {
       
-        block-size:100px;
+        block-size:120px;
         position: fixed;
         top: 0;
         left: 0;
+    
     
         
     }
