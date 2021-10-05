@@ -1,3 +1,4 @@
+@import './fonts.css';
 
 body {
     margin: 0;
@@ -10,7 +11,7 @@ section {
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat; 
-    height: 25%;
+    height: 25vh;
     margin: 0;
     padding: 0;
 
@@ -39,17 +40,17 @@ footer {
 
 #surLePouce {
     background-image: url(/assets/pouce_4.jpeg);
-    
+    align-items: center;
 }
 
 #jaiSoif {
     background-image: url(/assets/soif_3.jpeg);
-    
+    align-items: center;
 }
 
 #surprendsMoi {
     background-image: url(/assets/surprise_4.jpg);
- 
+    align-items: center;
 }
 
 .Logo {
@@ -68,27 +69,56 @@ footer {
 
 }
 
+html {
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    margin: 0;
+  }
 
-@media only screen and (min-width: 450px) {
+
+footer {
+    padding: 5px 25px 5px 5px;
+    background-color: var(--dark-gray);
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+  } 
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--second-font-family);
+    font-weight: 800;
+    padding-right: 20px; /* to fix label offset */
+}
+
+  footer a:hover {
+      text-decoration: underline;
+  }
+
+
+@media only screen and (min-width: 577px) {
 
     body {
     background-color: yellow;
-    
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
     
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-  
-  
-}
+
   
     section {         
    width: 20%;
    top: 25%;
    border-radius: 20%;
    margin-top: 15%;
+   height: 50vh;
+   margin-bottom: 15%;
  
     }
     
@@ -98,7 +128,7 @@ main {
     align-items: center;
     text-align: center;
     color: white;
-    height: 250px;
+    height: 300px;
     font-size: medium;
     
         
@@ -145,3 +175,5 @@ main {
     
     }
     }
+
+    
