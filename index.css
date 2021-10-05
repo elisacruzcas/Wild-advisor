@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+
+body {
+    margin: 0;
+   
+}
+
 section {  
     display: flex;
     flex-direction: row;
@@ -5,6 +12,8 @@ section {
     background-size: cover;
     background-repeat: no-repeat; 
     height: 25%;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -59,4 +68,81 @@ footer {
  
 
 }
+}
 
+@media only screen and (min-width: 601px) {
+
+    body {
+    background-color: yellow;
+    
+    
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+  
+    section {         
+   width: 20%;
+   top: 25%;
+   border-radius: 20%;
+   margin-top: 15%;
+ 
+    }
+    
+    h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 250px;
+    font-size: medium;
+    
+        
+    }
+    
+    footer {
+        text-align: right;
+    }
+    
+    #surPlace {
+        align-items: center;
+        background-image: url(/assets/place_5.jpeg) ; 
+       
+    }
+    
+    #surLePouce {
+        background-image: url(/assets/pouce_4.jpeg);
+        
+    }
+    
+    #jaiSoif {
+        background-image: url(/assets/soif_3.jpeg);
+        
+    }
+    
+    #surprendsMoi {
+        background-image: url(/assets/surprise_4.jpg);
+     
+    }
+    
+    .Logo {
+      
+        block-size:100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        
+    }
+    
+    #titleLogo {
+     justify-content: center;
+     
+    
+    }
+    }
