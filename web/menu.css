@@ -11,25 +11,22 @@ body {
     background:#849192;
 }
 
-img {
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
+.logo {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100px;
+    height: auto;
 }
 
 header nav {
     width: 100%;
     margin: 0;
-    background: #fff;
 }
 
 .menu_bar span {
     float: right;
     font-size: 50px;
-}
-
-.menu_bar {
     display: block;
     position: fixed;
     top: 1rem;
@@ -37,37 +34,31 @@ header nav {
     padding: 4px;
     border: black solid 1px;
 }
+
 .menu_bar:hover {
     cursor: pointer;
-    background: rgba (0,0,0,0.3);
 }
 
 .menu ul {
-    margin: 0;
+    margin-top:100px;
     padding: 0;
     display: flex;
     list-style: none;
-    flex-direction: row;
-    justify-content: right;
+    flex-direction: column;
+    align-items: flex-end;
+
 }
 
-.menu li {
-    border-left: 1px solid black;
-}
 .menu li a {
+    border-left: 1px solid black;
     display: flex;
     padding: 30px;
     color: black;
     text-decoration: none;
+    background-color: white;
+    width: 200px;
 }
 
 .menu li:hover {
-    background: pink;
-}
-
-.menu {
-   text-align: right;
-   background: #fff;
-  
-
+    background-color: pink;
 }
