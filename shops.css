@@ -29,7 +29,7 @@
 } 
 
 #logoFavoris {
-    font-size: 35px;
+    font-size: 30px;
     border: none;
     background-color: var(--darker-gray);
     float: right;
@@ -91,7 +91,16 @@ header {
     height: auto;  
 }
 
-
+.favButton {
+    position: absolute;
+    align-self: start;
+    justify-self: end;
+    border: none;
+    border-radius: none;
+    background-color: #11ffee00; /*tranpsarent*/
+    margin: 5px;
+    color: red;
+}
 
 .trajet {
     font-weight: bold;
@@ -103,6 +112,8 @@ header {
     color: white; 
     padding-left: 3px;
 }
+
+
 
 .card-body {
     position: relative;
@@ -149,6 +160,7 @@ header {
 .maps-enseigne {
     grid-column: 1;
     grid-row: 4;
+
 }
 
 

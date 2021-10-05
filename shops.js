@@ -17,6 +17,20 @@ function createCard(parameter) {
       document.getElementById(`btnOpen${parameter.id}`).style.visibility = 'visible';
   }
   
+  function setFavorite(parameter) {
+      const favCheck = document.getElementById(`setFavBtn${parameter.id}`);
+      if (favCheck.checked) {
+          setFavLabel.innerHTML = `&#xe87d`;
+          localStorage.setItem(parameter.id, parameter.name);
+      } else {
+          setFavLabel.innerHTML = `&#xe87e`;
+          localStorage.removeItem(parameter.name);
+        }
+        console.log(favCheck.checked);
+        console.log(localStorage.getItem(parameter.id));
+        
+        console.log(localStorage.length);
+  }
 
   const card = document.createElement("div");
   card.classList.add("card");
@@ -117,15 +131,28 @@ function createCard(parameter) {
   btnCloseCard.classList.add('btn-close-card');
   descriptEnseigne.appendChild(btnCloseCard);
 
-
-
-  
+// Favorite Feature in cards
+  const setFavBtn = document.createElement('input');
+  setFavBtn.setAttribute('type', 'checkbox');
+  setFavBtn.setAttribute('id', `setFavBtn${parameter.id}`);
+  setFavBtn.className = 'material-icons';
+  setFavBtn.classList.add('favButton');
+  setFavBtn.style.visibility = 'hidden';
+  cardHeader.appendChild(setFavBtn);
+  const setFavLabel = document.createElement('label');
+  setFavLabel.setAttribute('for', `setFavBtn${parameter.id}`);
+  setFavLabel.className = 'material-icons';
+  setFavLabel.classList.add('favButton');
+  setFavLabel.innerHTML = `&#xe87e`;
+  setFavLabel.setAttribute('id', `setFavLabel${parameter.id}`)
+  cardHeader.appendChild(setFavLabel);
+  setFavLabel.addEventListener('click', () => setFavorite(parameter));
+   
 }
 
 
 
 const titleName = document.querySelector('.title');
-
 for (let i = 0; i < shops.length; i++) {
   if (titleName.id == 'place' && shops[i].category.includes('restaurant')) { 
   createCard(shops[i]);
@@ -135,62 +162,27 @@ for (let i = 0; i < shops.length; i++) {
   }
   else if (titleName.id == 'snacking' && shops[i].category.includes('snacking')) {
   createCard(shops[i]);
+  }
+  else if (titleName.id == 'favoris' && shops[i].name == localStorage.getItem(shops[i].id)) {
+  createCard(shops[i]);
+  }
+
 }
-
-
 
 
 //Favorites feature
-
-function storageAvailable(type) {
-  try {
-      var storage = window[type],
-          x = '__storage_test__';
-      storage.setItem(x, x);
-      storage.removeItem(x);
-      return true;
-  }
-  catch(e) {
-      return e instanceof DOMException && (
-          // everything except Firefox
-          e.code === 22 ||
-          // Firefox
-          e.code === 1014 ||
-          // test name field too, because code might not be present
-          // everything except Firefox
-          e.name === 'QuotaExceededError' ||
-          // Firefox
-          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-          // acknowledge QuotaExceededError only if there's something already stored
-          storage.length !== 0;
-  }
-}
-if (storageAvailable('localStorage')) {
-	// Nous pouvons utiliser localStorage
-  console.log('Let s go')
+// Favorite icon in title
 const title = document.querySelector('.title');
-const pageFavorite = document.createElement('div');
+const pageFavorite = document.createElement('a');
 pageFavorite.classList.add('title');
 pageFavorite.className = 'material-icons';
 pageFavorite.setAttribute('id', 'logoFavoris');
+pageFavorite.href = 'favoris.html'
 pageFavorite.innerHTML = `&#xe87d`;
 title.appendChild(pageFavorite);
 
 
-const setFavBtn = document.createElement('div');
-setFavBtn.className = 'setFavBtn';
-setFavBtn.innerHTML = `&#xe87e`;
-cardHeader.appendChild(setFavBtn);
 
-
-
-}
-else {
-  console.log('Local Storage non disponible')
-}
-
-
-} 
 
 
 
