@@ -20,16 +20,18 @@ function createCard(parameter) {
   
   function setFavorite(parameter) {
       const favCheck = document.getElementById(`setFavBtn${parameter.id}`); 
-      if (favCheck.checked) {
-          setFavLabel.innerHTML = `&#xe87d`;
-          // favCheck.checked = true;
+      
+      if (!parameter.isFavorit ) {
+        console.log('add');
+          setFavBtn.innerHTML = `&#xe87d`;
+          parameter.isFavorit = true
           localStorage.setItem(parameter.id, parameter.name);
-      } else {
-          setFavLabel.innerHTML = `&#xe87e`;
-          // favCheck.checked = false;
+        } else {
+          console.log('remove');
+          setFavBtn.innerHTML = `&#xe87e`;
+          parameter.isFavorit = false
           localStorage.removeItem(parameter.id);
-        }
-        console.log(favCheck.checked);        
+        }     
         console.log(localStorage);
   }
 
@@ -133,24 +135,18 @@ function createCard(parameter) {
   descriptEnseigne.appendChild(btnCloseCard);
 
 // Favorite Feature in cards
-  const setFavBtn = document.createElement('input');
-  setFavBtn.setAttribute('type', 'checkbox');
+  const setFavBtn = document.createElement('a');
   setFavBtn.setAttribute('id', `setFavBtn${parameter.id}`);
   setFavBtn.className = 'material-icons';
   setFavBtn.classList.add('favButton');
-  setFavBtn.style.visibility = 'hidden';
   cardHeader.appendChild(setFavBtn);
-  const setFavLabel = document.createElement('label');
-  setFavLabel.setAttribute('for', `setFavBtn${parameter.id}`);
-  setFavLabel.className = 'material-icons';
-  setFavLabel.classList.add('favButton');
-  setFavLabel.setAttribute('id', `setFavLabel${parameter.id}`)
-  cardHeader.appendChild(setFavLabel);
 
     if (parameter.name == localStorage.getItem(parameter.id)) {
-      setFavLabel.innerHTML = `&#xe87d`;
+      setFavBtn.innerHTML = `&#xe87d`;
+      parameter.isFavorit = true
     } else {
-      setFavLabel.innerHTML = `&#xe87e`;
+      setFavBtn.innerHTML = `&#xe87e`;
+      parameter.isFavorit = false
     }
   setFavBtn.addEventListener('click', () => setFavorite(parameter)); 
   }
