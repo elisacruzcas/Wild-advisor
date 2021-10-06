@@ -46,7 +46,7 @@ select {
 
 button {
     background-color: var(--main-wcs-color);
-    border: 1px solid #404A53;
+    border: 1px solid var(--dark-gray);
     font-weight: 700;
     color: white;
     font-size: 20px;
@@ -61,13 +61,6 @@ button:hover {
     font-weight: 900;
 }
 
-.excuses-bidons {
-    height: 13em;
-    text-align: center;
-    background-color: var(--light-gray);
-    font-family: var(--second-font-family);
-}
-
 .form-element {
     width: 65vw;
     display: flex;
@@ -76,17 +69,38 @@ button:hover {
 }
 
 .search-results {
-    background-color: rgba(132, 145, 146, 50%);
-    display: block;
+    background-color: rgba(132, 145, 146, 75%);
+    display: none;
 }
 
 .results-elements {
-    height: 800px;
+    height: 200px;
 }
 
 .close-button {
     border-radius: 100%;
     margin: 5px auto;
+}
+
+.excuses-bidons {
+    text-align: center;
+    background-color: rgba(132, 145, 146, 75%);
+    font-family: var(--second-font-family);
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: white
+}
+
+#excuse_button {
+    margin-bottom: 10px;
+}
+
+.excuse {
+    font-size: 20px;
+}
+
+.excuse-space {
+    height: 10px;
 }
 
 
