@@ -22,7 +22,7 @@ function createCard(parameter) {
       const favCheck = document.getElementById(`setFavBtn${parameter.id}`); 
       
       if (!parameter.isFavorit ) {
-        console.log('add');
+        // console.log('add');
           setFavBtn.innerHTML = `&#xe87d`;
           parameter.isFavorit = true
           localStorage.setItem(parameter.id, parameter.name);
@@ -32,7 +32,7 @@ function createCard(parameter) {
           parameter.isFavorit = false
           localStorage.removeItem(parameter.id);
         }     
-        console.log(localStorage);
+        // console.log(localStorage);
   }
 
   const card = document.createElement("div");
@@ -90,6 +90,8 @@ function createCard(parameter) {
   const mapsLink = document.createElement('a');
   mapsLink.classList.add('maps-link');
   mapsLink.href = parameter.urlItineraire;
+  mapsLink.target = "_blank";
+  mapsLink.rel = "noreferrer noopener";
   mapsLink.className = "material-icons";
   mapsLink.innerHTML =  "&#xe536";
   mapsEnseigne.appendChild(mapsLink);
@@ -122,6 +124,8 @@ function createCard(parameter) {
     const descriptSite = document.createElement('a');
     descriptSite.classList.add('descript-site');
     descriptSite.href = parameter.site;
+    descriptSite.target = "_blank";
+    descriptSite.rel = "noreferrer noopener";
     descriptSite.innerHTML = "Site Internet";
     descriptEnseigne.appendChild(descriptSite);
   }
