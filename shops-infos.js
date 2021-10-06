@@ -8,7 +8,7 @@ const shops = [
     pictureAlt: "Le Quinze",
     category: ["boire", "restaurant"],
     price_range: "€€",
-    ratings: "⯪★★★★",
+    ratings: "&#11242;★★★★",
     trajet: 3,
     description: "Le spectacle du soir est chaudement recommandé par Thomas, notre maître à tous",
     coordonnees: "15 Rue du Surmelin",
