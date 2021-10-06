@@ -80,7 +80,7 @@ function createCard(parameter) {
 
   const avisEnseigne = document.createElement('div');
   avisEnseigne.classList.add('avis-enseigne');
-  avisEnseigne.innerHTML = parameter.ratings;
+  avisEnseigne.style = `--rating: ${parameter.ratings}`;
   cardBody.appendChild(avisEnseigne);
 
   const mapsEnseigne = document.createElement('div');
@@ -170,7 +170,7 @@ for (let i = 0; i < shops.length; i++) {
 
 }
 
-export default createCard(); 
+
 
 
 
