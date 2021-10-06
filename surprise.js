@@ -1,4 +1,5 @@
 import {getCharacters, getVerbs, getObjects} from './excuse-data.js'
+import {createCard} from './shops.js'
 import shops  from './shops-infos.js';
 
 
@@ -31,6 +32,7 @@ resultsButton.addEventListener('click', function(){
             if (shop.trajet <= distance) {
                 if (shop.ratings.length >= rating) {
                     results.push(shop.name)
+                    createCard(shop)
                 }
             }
         }
