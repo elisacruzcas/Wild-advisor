@@ -14,8 +14,18 @@
 </head>
 <body>
     <header>
-        <h1>Header</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
+        <a href="index.html">Accueil</a>
+        <a href="place.html">Sur place</a>
+        <a href="pouce.html">Sur le pouce</a>
+        <a href="soif.html">J'ai soif</a>
+        <a href="surprise.html">Surprends-moi</a>
+        <a href="favoris.html">Favoris</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="burger" src="./assets/Hamburger_icon.png" alt="Hamburger icon"></a>
+    </div>  
       </header>
+      <main>
       <h1 class="title" id="boire">J'ai Soif</h1>
       <div class="cards">
         <div class="card" id='template'> 
@@ -42,6 +52,8 @@
           </div>
         </div>
       </div>
+    </main>
       <script src="shops.js" type="module"></script>
+      <script src="pages-header.js"></script>
 </body>
 </html> 

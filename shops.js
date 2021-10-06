@@ -1,6 +1,7 @@
 import shops  from './shops-infos.js';
 
 
+//Card Constructor
 const cards = document.querySelector(".cards");
 
 function createCard(parameter) {   
@@ -24,12 +25,10 @@ function createCard(parameter) {
           localStorage.setItem(parameter.id, parameter.name);
       } else {
           setFavLabel.innerHTML = `&#xe87e`;
-          localStorage.removeItem(parameter.name);
+          localStorage.removeItem(parameter.id);
         }
-        console.log(favCheck.checked);
-        console.log(localStorage.getItem(parameter.id));
-        
-        console.log(localStorage.length);
+        console.log(favCheck.checked);        
+        console.log(localStorage);
   }
 
   const card = document.createElement("div");
@@ -143,12 +142,16 @@ function createCard(parameter) {
   setFavLabel.setAttribute('for', `setFavBtn${parameter.id}`);
   setFavLabel.className = 'material-icons';
   setFavLabel.classList.add('favButton');
-  setFavLabel.innerHTML = `&#xe87e`;
   setFavLabel.setAttribute('id', `setFavLabel${parameter.id}`)
   cardHeader.appendChild(setFavLabel);
-  setFavLabel.addEventListener('click', () => setFavorite(parameter));
-   
-}
+
+    if (parameter.name == localStorage.getItem(parameter.id)) {
+      setFavLabel.innerHTML = `&#xe87d`;
+    } else {
+      setFavLabel.innerHTML = `&#xe87e`;
+    }
+  setFavBtn.addEventListener('click', () => setFavorite(parameter));
+  }
 
 
 
@@ -170,16 +173,6 @@ for (let i = 0; i < shops.length; i++) {
 }
 
 
-//Favorites feature
-// Favorite icon in title
-const title = document.querySelector('.title');
-const pageFavorite = document.createElement('a');
-pageFavorite.classList.add('title');
-pageFavorite.className = 'material-icons';
-pageFavorite.setAttribute('id', 'logoFavoris');
-pageFavorite.href = 'favoris.html'
-pageFavorite.innerHTML = `&#xe87d`;
-title.appendChild(pageFavorite);
 
 
 
