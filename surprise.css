@@ -1,0 +1,185 @@
+@import './fonts.css';
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    color: var(--main-wcs-color);
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--dark-gray);
+    color: white;
+    font-family: var(--main-font-family);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-element {
+    margin: 5px;
+}
+
+label {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+select {
+    color: var(--main-wcs-color);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.form-button{
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--main-font-family);   
+}
+
+button {
+    background-color: var(--main-wcs-color);
+    border: 1px solid #404A53;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    padding: 3px 15px;
+    border-radius: 8px;
+    font-family: var(--main-font-family);
+}
+
+button:hover {
+    box-shadow: 0 0.2em 0.2em 0;
+    opacity: 1;
+    font-weight: 900;
+}
+
+.excuses-bidons {
+    height: 13em;
+    text-align: center;
+    background-color: var(--light-gray);
+    font-family: var(--second-font-family);
+}
+
+.form-element {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--second-font-family);
+}
+
+.search-results {
+    background-color: rgba(132, 145, 146, 50%);
+    display: block;
+}
+
+.results-elements {
+    height: 800px;
+}
+
+.close-button {
+    border-radius: 100%;
+    margin: 5px auto;
+}
+
+
+/* CSS SPECIFIQUE AUX HEADER ET FOOTER */
+
+html {
+    flex-direction: column;
+    background-color: var(--darker-gray);
+    margin: 0;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    padding: 5px;
+    min-height: 100%;
+    margin: 0 auto -10px;
+}
+
+footer {
+    padding: 5px 25px 5px 5px;
+    background-color: var(--dark-gray);
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--second-font-family);
+    font-weight: 800;
+    padding-right: 20px; /* to fix label offset */
+}
+
+footer a:hover {
+      text-decoration: underline;
+}
+
+.wild-logo {
+    height: 50px;
+}
+
+.burger {
+    height: 50px;
+    width: auto;
+}
+
+ .topnav {
+    background-color: var(--dark-gray);
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: var(--main-font-family);
+    height: 50px;
+  }
+  
+  .topnav a:hover {
+      background-color: var(--main-wcs-color);
+  }
+
+  .topnav .icon {
+    display: none;
+  } 
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      height: auto;
+    }
+  } 
