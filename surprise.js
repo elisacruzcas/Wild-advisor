@@ -27,24 +27,47 @@ resultsButton.addEventListener('click', function(){
     let results = []
 
     for (let shop of shops) {
-        console.log(shop.name)
+        if (shop.price_range.length <= price) {
+            if (shop.trajet <= distance) {
+                if (shop.ratings.length >= rating) {
+                    results.push(shop.name)
+                }
+            }
+        }
     }
+
+    console.log(results)
 
 })
 
+//   {
+//     id: "01",
+//     name: "Le Quinze",
+//     picture: "shops-assets/leQuinze.jpg",
+//     pictureAlt: "Le Quinze",
+//     category: ["boire", "restaurant"],
+//     price_range: "€€",
+//     ratings: "⯪★★★★",
+//     trajet: 3,
+//     description: "Le spectacle du soir est chaudement recommandé par Thomas, notre maître à tous",
+//     coordonnees: "15 Rue du Surmelin",
+//     phone: "0143643856",
+//     urlItineraire: "https://goo.gl/maps/W9Thjmk5157EctMj6",
+//     site: "",
+//     style: "Bar et restaurant avec terrasse",
+//   },
 
 
 
 
 
 
-
-// resultsButton.addEventListener('click', function(){
-//     results.style.display = 'block'
-// })
-// closeButton.addEventListener('click', function(){
-//     results.style.display = 'none'
-// })
+resultsButton.addEventListener('click', function(){
+    results.style.display = 'block'
+})
+closeButton.addEventListener('click', function(){
+    results.style.display = 'none'
+})
 
 
 // BAD EXCUSES PART
