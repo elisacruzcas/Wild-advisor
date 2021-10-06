@@ -24,6 +24,8 @@ resultsButton.addEventListener('click', function(){
     console.log(rating)
     // 0 = n'importe  -  1 = *** -  2 = ****  -  3 = *****
 
+    let results = []
+
     for (let shop of shops) {
         console.log(shop.name)
     }
