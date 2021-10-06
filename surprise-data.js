@@ -12,7 +12,8 @@ function getCharacters(){
 'Paul-Emmanuel',
 'Brendan Eich',
 'Elon Musk',
-'Edouard Philippe'
+'Edouard Philippe',
+'un breton',
 ]}
 
 function getVerbs() {
@@ -28,6 +29,7 @@ function getVerbs() {
 "m'a proposé de tourner un film sur", 
 'me poursuivait avec',
 'dessinait',
+'voulait exfiltrer',
 ]}
 
 function getObjects() {
@@ -42,7 +44,8 @@ function getObjects() {
 'toutes les machines à café', 
 'les viennoiseries sur la table',
 'la banane pourrie au fond du frigo',
-'la dernière boite de post-its'
+'la dernière boite de post-its',
+"l'émulateur",
 ]}
 
 export {getCharacters, getVerbs, getObjects}
