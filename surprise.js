@@ -20,7 +20,8 @@ const verbs = ['a volé',
 "voulait s'enfuir de la Wild avec", 
 'revendait des faux pass sanitaires contre', 
 "m'a fait passer la douane en cachant", 
-"m'a proposé de tourner un film sur", 'me poursuivait avec']
+"m'a proposé de tourner un film sur", 
+'me poursuivait avec']
 
 const objects = ['mon dernier ticket de métro', 
 'mes chaussures', 
@@ -35,8 +36,6 @@ const objects = ['mon dernier ticket de métro',
 
 
 // A RETRAVAILLER
-// const newData = require('./data.js');
-// const {characters, verbs, objects} = newData;
 
 const excuse = document.querySelector('.excuse')
 const excuseBox = document.querySelector('.excuses-bidons')
@@ -69,3 +68,14 @@ resultsButton.addEventListener('click', function(){
 closeButton.addEventListener('click', function(){
     results.style.display = 'none'
 })
+
+
+// JS SPECIFIQUE AU HEADER
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
