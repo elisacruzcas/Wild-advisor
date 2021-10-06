@@ -1,4 +1,6 @@
-import {getCharacters, getVerbs, getObjects} from './surprise-data.js'
+import {getCharacters, getVerbs, getObjects} from './excuse-data.js'
+import shops  from './shops-infos.js';
+
 
 // SEARCH ENGINE PART
 const results = document.querySelector('.search-results')
@@ -6,52 +8,28 @@ const resultsButton = document.querySelector('.first-button')
 const closeButton = document.querySelector('.close-button')
 
 resultsButton.addEventListener('click', function(){
-    const price = document.getElementById("price-select").selectedIndex;
+    let price = document.getElementById("price-select").selectedIndex;
     console.log(price)
     // 0 = n'importe  -  1 = €  -  2 = €€  -  3 = €€€     TYPE NUMBER
 
-    const distance = document.getElementById("distance-select").selectedIndex;
+    let distance = document.getElementById("distance-select").selectedIndex;
+    distance *= 5
     console.log(distance)
     // 0 = n'importe  -  1 = 5min  -  2 = 10min  -  3 = 15min
 
-    const rating = document.getElementById("rating-select").selectedIndex;
+    let rating = document.getElementById("rating-select").selectedIndex;
+    if (rating != 0) {
+        rating +=2
+    }
     console.log(rating)
     // 0 = n'importe  -  1 = *** -  2 = ****  -  3 = *****
 
+    for (let shop of shops) {
+        console.log(shop.name)
+    }
 
 })
 
-
-
-
-
-
-
-
-
-
-
-// <select name="price" id="price-select">
-// <option value="none">Peu importe</option>
-// <option value="€">€</option>
-// <option value="€€">€€</option>
-// <option value="€€€">€€€</option>
-// </select>
-// </div>
-
-// <div class="form-element">
-// <label for="distance">Distance</label>
-// <select name="distance" id="distance-select">
-// <option value="none">Peu importe</option>
-// <option value="5">5 min</option>
-// <option value="10">10 min</option>
-// <option value="15">15 min</option>
-// </select>
-// </div>
-
-// <div class="form-element">
-// <label for="rating">Avis</label>
-// <select name="rating" id="rating-select">
 
 
 
