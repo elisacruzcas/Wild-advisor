@@ -203,13 +203,13 @@ footer a:hover {
 
   @import '.fonts.css';
 
-#template {
+/* #template {
     display: none; 
 }
 
 * {
     box-sizing: border-box;
-  }
+  } */
 
 .material-icons {
     font-family: 'Material Icons'; 
@@ -237,8 +237,6 @@ footer a:hover {
     background-color: var(--darker-gray);
     float: right;
 }
-
-/* CSS SPECIFIQUE AUX HEADER ET FOOTER */
 
 .title {
     height: 3em;
@@ -351,7 +349,6 @@ footer a:hover {
 
 }
 
-
 .card-body button {
     grid-column: 5;
     grid-row: 3;
@@ -362,8 +359,6 @@ footer a:hover {
     border: none;
     border-radius: 0%;
 }
-
-
 
 .descript-enseigne {
     position: relative;
