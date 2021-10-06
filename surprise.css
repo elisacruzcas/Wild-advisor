@@ -90,8 +90,7 @@ button:hover {
 }
 
 
-
-/* COMMON CSS  */
+/* CSS SPECIFIQUE AUX HEADER ET FOOTER */
 
 html {
     flex-direction: column;
@@ -107,7 +106,6 @@ main {
     margin: 0 auto -10px;
 }
 
-/* FOOTER STYLING */
 footer {
     padding: 5px 25px 5px 5px;
     background-color: var(--dark-gray);
@@ -129,7 +127,6 @@ footer a:hover {
       text-decoration: underline;
 }
 
-/* HEADER */
 .wild-logo {
     height: 50px;
 }
@@ -151,7 +148,7 @@ footer a:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     font-family: var(--main-font-family);
     height: 50px;
   }

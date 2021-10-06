@@ -1,18 +1,3 @@
-// HEADER
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  } 
-
-
-
-
-
-
 // BAD EXCUSES PART
 const characters = ['Tu Duy',
 'Linus Torvalds',
@@ -83,3 +68,14 @@ resultsButton.addEventListener('click', function(){
 closeButton.addEventListener('click', function(){
     results.style.display = 'none'
 })
+
+
+// JS SPECIFIQUE AU HEADER
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
