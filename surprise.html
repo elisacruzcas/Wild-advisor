@@ -27,6 +27,9 @@
                 <a href="favoris.html">Favoris</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="burger" src="./assets/Hamburger_icon.png" alt="Hamburger icon"></a>
             </div>
+
+    
+    
     </header>
 
 
@@ -54,9 +57,9 @@
                 <label for="distance">Distance</label>
                 <select name="distance" id="distance-select">
                     <option value="none">Peu importe</option>
-                    <option value="€">5 min</option>
-                    <option value="€€">10 min</option>
-                    <option value="€€€">15 min</option>
+                    <option value="5">5 min</option>
+                    <option value="10">10 min</option>
+                    <option value="15">15 min</option>
                 </select>
             </div>
             
@@ -64,9 +67,9 @@
                 <label for="rating">Avis</label>
                 <select name="rating" id="rating-select">
                     <option value="none">Peu importe</option>
-                    <option value="€">*** ou plus</option>
-                    <option value="€€">**** ou plus</option>
-                    <option value="€€€">*****</option>
+                    <option value="***">*** ou plus</option>
+                    <option value="****">**** ou plus</option>
+                    <option value="*****">*****</option>
                 </select>
             </div>
         </div>        
@@ -83,15 +86,18 @@
     
     <div class="excuses-bidons">
         <h2 class="subtitle">Simulateur d'excuses bidons</h2>
-            <p>Tu vas arriver en retard au Campus ? Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
+            <p>Tu vas arriver en retard au Campus ?</p>
+            <p>Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
     
-            <button class="btn">SORS UNE EXCUSE</button>
+            <button class="btn" id="excuse_button">SORS UNE EXCUSE</button>
 
             <div class="excuse"></div>
+            <div class="excuse-space"></div>
     </div>
     
     </main>
-    <script src="surprise.js"></script>
+    <script type="module" src="surprise.js"></script>
+    <script src="pages-header.js"></script>
 
     
 

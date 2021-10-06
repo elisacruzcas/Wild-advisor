@@ -1,44 +1,78 @@
+import {getCharacters, getVerbs, getObjects} from './surprise-data.js'
+
+// SEARCH ENGINE PART
+const results = document.querySelector('.search-results')
+const resultsButton = document.querySelector('.first-button')
+const closeButton = document.querySelector('.close-button')
+
+resultsButton.addEventListener('click', function(){
+    const price = document.getElementById("price-select").selectedIndex;
+    console.log(price)
+    // 0 = n'importe  -  1 = €  -  2 = €€  -  3 = €€€     TYPE NUMBER
+
+    const distance = document.getElementById("distance-select").selectedIndex;
+    console.log(distance)
+    // 0 = n'importe  -  1 = 5min  -  2 = 10min  -  3 = 15min
+
+    const rating = document.getElementById("rating-select").selectedIndex;
+    console.log(rating)
+    // 0 = n'importe  -  1 = *** -  2 = ****  -  3 = *****
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+// <select name="price" id="price-select">
+// <option value="none">Peu importe</option>
+// <option value="€">€</option>
+// <option value="€€">€€</option>
+// <option value="€€€">€€€</option>
+// </select>
+// </div>
+
+// <div class="form-element">
+// <label for="distance">Distance</label>
+// <select name="distance" id="distance-select">
+// <option value="none">Peu importe</option>
+// <option value="5">5 min</option>
+// <option value="10">10 min</option>
+// <option value="15">15 min</option>
+// </select>
+// </div>
+
+// <div class="form-element">
+// <label for="rating">Avis</label>
+// <select name="rating" id="rating-select">
+
+
+
+
+
+
+
+// resultsButton.addEventListener('click', function(){
+//     results.style.display = 'block'
+// })
+// closeButton.addEventListener('click', function(){
+//     results.style.display = 'none'
+// })
+
+
 // BAD EXCUSES PART
-const characters = ['Tu Duy',
-'Linus Torvalds',
-'un homme en costume de Pikachu', 
-'le prof de data', 
-'Kad Merad', 
-'un témoin de Jéhovah', 
-'Jacques Chirac', 
-'un chat noir', 
-"une bactérie de l'évier", 
-'Thomas', 
-'Paul-Emmanuel']
-
-const verbs = ['a volé', 
-'a créé des actions en Bourse sur', 
-'a dansé avec', 
-'a testé un tour de magie avec', 
-'a défenestré', 
-"m'a échangé ses cartes Pokémon contre", 
-"voulait s'enfuir de la Wild avec", 
-'revendait des faux pass sanitaires contre', 
-"m'a fait passer la douane en cachant", 
-"m'a proposé de tourner un film sur", 
-'me poursuivait avec']
-
-const objects = ['mon dernier ticket de métro', 
-'mes chaussures', 
-'mes chaussettes', 
-'mon ordinateur portable', 
-'une tronçonneuse', 
-'mon appareil à raclette', 
-'un paquet de clopes', 
-'une chemise à carreaux', 
-'toutes les machines à café', 
-'les viennoiseries sur la table']
-
-
-// A RETRAVAILLER
+const characters = getCharacters()
+const verbs = getVerbs()
+const objects = getObjects()
 
 const excuse = document.querySelector('.excuse')
-const excuseBox = document.querySelector('.excuses-bidons')
 const excuseButton = document.getElementsByClassName('btn')
 
 excuseButton[0].addEventListener('click', function(){
@@ -50,32 +84,8 @@ excuseButton[0].addEventListener('click', function(){
     let objNum = Math.floor(Math.random()*objects.length)
     let sentence = 'Désolé de mon retard, mais ' + characters[charNum] + ' ' + verbs[verNum] + ' ' + objects[objNum]
 
-    excuseBox.style.height = '17em'
+
     excuseElement.innerHTML = sentence;
     excuseButton[0].innerHTML = 'AUTRE EXCUSE'
     excuse.appendChild(excuseElement);
 })
-
-
-// SEARCH ENGINE PART
-const results = document.querySelector('.search-results')
-const resultsButton = document.querySelector('.first-button')
-const closeButton = document.querySelector('.close-button')
-
-resultsButton.addEventListener('click', function(){
-    results.style.display = 'block'
-})
-closeButton.addEventListener('click', function(){
-    results.style.display = 'none'
-})
-
-
-// JS SPECIFIQUE AU HEADER
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-} 
