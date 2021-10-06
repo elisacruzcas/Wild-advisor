@@ -19,12 +19,14 @@ function createCard(parameter) {
   }
   
   function setFavorite(parameter) {
-      const favCheck = document.getElementById(`setFavBtn${parameter.id}`);
+      const favCheck = document.getElementById(`setFavBtn${parameter.id}`); 
       if (favCheck.checked) {
           setFavLabel.innerHTML = `&#xe87d`;
+          // favCheck.checked = true;
           localStorage.setItem(parameter.id, parameter.name);
       } else {
           setFavLabel.innerHTML = `&#xe87e`;
+          // favCheck.checked = false;
           localStorage.removeItem(parameter.id);
         }
         console.log(favCheck.checked);        
@@ -150,7 +152,7 @@ function createCard(parameter) {
     } else {
       setFavLabel.innerHTML = `&#xe87e`;
     }
-  setFavBtn.addEventListener('click', () => setFavorite(parameter));
+  setFavBtn.addEventListener('click', () => setFavorite(parameter)); 
   }
 
 

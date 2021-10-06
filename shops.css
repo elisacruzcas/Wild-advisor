@@ -60,7 +60,7 @@ main {
 
 footer {
     padding: 5px 25px 5px 5px;
-    background-color: var(--dark-gray);
+    background-color: var(--darker-gray);
     text-align: right;
     position: fixed;
     bottom: 0;
