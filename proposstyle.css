@@ -1,3 +1,11 @@
+body {
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -11,7 +19,7 @@ ul {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 2px;
     text-decoration: none;
   }
   li a:hover {
@@ -22,21 +30,20 @@ ul {
     background-color: white;
   }
  h1 {
-   font-size: 328%;
+   font-size: 218%;
    color: white;
    padding-top: 45px;
-  height: 150px;
+  height: 105px;
   text-align: center;
   background-image: url("media/placeholder.jpeg");
-  margin-left: -6px;
-  scroll-margin-right: -6px;
+  /* margin-left: -6px; */
+  /* scroll-margin-right: -6px; */
   }
   
   .leproject {
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: justify;
-  text-justify: inter-word;
   }
 
 h2 {
@@ -44,85 +51,108 @@ h2 {
   margin-top: 55px;
   margin-bottom: 35px;
 }
+.name-block {
+  display: none;
+}
 h3 {
   margin-top: 45px;
   text-align: center;
   margin-bottom: 55px;
 }
-  img {
+
+img {
     margin-bottom: 155px;
-    margin: -8px;
-    width: 34.26%;
-    height: 299px;
+    margin: -4px;
+    /* margin: -9px; */
+    width: 34.6%;
+    height: 235px;
     object-fit: cover;
+    transition: transform .2s;
+
   }
 
+ 
+
 #teamfont {
-font-size: 140%;
+font-size: 80%;
 color: white;
+font-weight: bold;
 }
 
 #teamfontdos {
-  font-size: 140%;
+  font-size: 80%;
   color: white;
+  font-weight: bold;
   }
 
 
 .teamuno {
   display: none;
   position: absolute;
-  bottom: 320px;
-  left: 120px;
+  bottom: -170px;
+  left: 40px;
 }
 .teamdos {
   position: absolute;
-  bottom: 320px;
-  left: 420px;
+  bottom: -170px;
+  left: 150px;
   display: none;
 }
 .teamtres {
   position: absolute;
-  bottom: 320px;
-  left: 725px;
+  bottom: -170px;
+  left: 290px;
   display: none;
 }
 
 .teamcuatro {
   position: absolute;
-  bottom: -10px;
-  left: 90px;
+  bottom: -240px;
+  left: 7px;
 }
 .teamcinco {
   position: absolute;
-  bottom: -10px;
-  left: 420px;
+  bottom: -240px;
+  left: 165px;
   display: none;
 }
 .teamseis {
   position: absolute;
-  bottom: -10px;
-  left: 725px;
+  bottom: -240px;
+  left: 289px;
   display: none;
 }
 
 h4 {
+  font-size: 145%;
   margin-top: 35px;
   text-align: center;
   margin-bottom: 35px;
 }
 #contact {
-  width: 500px;
-  margin: 0 auto;
-font-size: 200%;
-}
-#objet {
-margin-left: 50px;
+  /* width: 500px; */
+  /* margin: 0 auto; */
+font-size: 120%;
+/* border-radius: 20%; */
 }
 
+#emailtext {
+  margin-left: 25px;
+ 
+}
+#objettext {
+  margin-left: 20px;
+}
+#messagetext {
+  margin-left: 5px;
+}
 
 #message {
-  margin-left: 10px;
+  font-size: 100%;
+  margin-left: -6px;
+ margin-bottom: -20px;
 }
+
 
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -134,17 +164,19 @@ margin-left: 50px;
   transition: border 0.15s;
   margin-bottom: 25px;
   margin-left: 60px;
+  border-radius: 15px;
 }
 .form-group input[type="text"],
 .form-group input[type="email"] {
   height: 0.5rem;
 }
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   position: fixed;
-  height: 70px;
+  height: 50px;
   text-align: right;
   color: white;
   width: 100%;
@@ -152,11 +184,80 @@ footer {
 }
 
 button {
-  font-size: 60%;
+  font-size: 78%;
   margin-top: 50px;
   margin-bottom: 110px;
+  border-radius: 15px;
+  background-color: white;
 }
+
 .textfooter {
   padding-right: 30px;
-  font-size: 180%;
+  font-size: 150%;
 }
+
+@media only screen and (min-width: 450px) {
+
+  img:hover {
+    transform: scale(1.5);
+  }
+
+  #margenuno {
+    margin-left: -90px;
+margin-right: -100px;
+  }
+
+  #margendos {
+    margin-left: -90px;
+margin-right: -100px;
+  }
+  .name-block {
+    text-align: center;
+    font-size: 120%;
+    display: inline-table;
+   width: 33%;
+  }
+  
+  #teamfont {
+    font-size: 15%;
+    color: white;
+    }
+    #teamfontdos {
+      font-size: 10%;
+      color : white;
+      }
+  img {
+    margin: 9px;
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+  }
+
+  .teamuno {
+
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: -40px;
+  
+  }
+  .teamdos {
+    margin-bottom: 100px;
+    margin-left: -120px;
+  }
+  .teamtres {
+    margin-bottom: 100px;
+    margin-left: -280px;
+  }
+  
+  .teamcuatro {
+ margin-bottom: 350px;
+  }
+  .teamcinco {
+    margin-bottom: 350px;
+    margin-left: -240px;
+  }
+  .teamseis {
+    margin-bottom: 350px;
+    margin-left: -280px;
+  }
+  }

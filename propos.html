@@ -2,6 +2,8 @@
 <html lang=en>
 <head>
 <meta charset=utf-8>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="title">A Propos</title>
 <link rel="stylesheet" href="proposstyle.css">
 </head>
@@ -26,17 +28,37 @@
       Si vous vous attardez trop à midi et que vous êtes en retard en cours,
        notre simulateur vous proposera aussi une excuse bidon pour convaincre votre 
        formateur de votre bonne foi (ou pas…)
-
       </p>
     <h3>L’équipe</h3>
+    <div class="name-block">
+<p>Melissa Olas
+   </p>
+    </div>
+    <div id="margenuno" class="name-block">
+      <p>
+        Etienne Fromentin
+      </p>
+          </div>
+          <div class="name-block">
+            <p>Maria Elisa Cruz </p>
+                </div>
     <div id="teamfont" class="teamone">
     <img class="photouno" src="/media/team1.jpg" alt="teammember 1">
     <div class="teamuno">Melissa Olas</div>
-    <img class="photodos" src="/media/team.jpg" alt="teammember 2">
+    <img class="photodos" src="/media/team2.jpg" alt="teammember 2">
     <div class="teamcuatro">Matthieu Lemarchand</div>
     <img class="phototres"src="/media/team3.jpeg" alt="teammember 3">
     <div class="teamdos">Etienne Fromentin</div>
     </div>
+    <div class="name-block">
+      <p>Matthieu Lemarchand</p>
+          </div>
+          <div class="name-block" id="margendos">
+            <p>Vincent Lejeune</p>
+                </div>
+                <div class="name-block">
+                  <p>Juan Carlos Cobas </p>
+                      </div>
    <div id="teamfontdos" class="teamtwo">
     <img class="photocuatro" src="/media/team4.jpg" alt="teammember 4">
     <div class="teamtres">Maria Elisa Cruz</div>
@@ -50,16 +72,16 @@
     <div class="contact-inner content center">
         <form action="" method="POST">
             <div class="form-group">
-              <label for="name">Mail</label>
-              <input name="Email"  type="email" id="email" placeholder="email@domain.tld" required  maxlength="25"/>
+              <label id="mail" for="name">Mail</label>
+              <input name="Email"  type="email" id="emailtext" placeholder="email@domain.tld" required  maxlength="25"/>
             </div>
             <div class="form-group">
-              <label for="email">Objet</label>
-              <input type="text" name="Name" id="objet" placeholder="Sujet" required minlength="3"/>
+              <label id="objet "for="email">Objet</label>
+              <input type="text" name="Name" id="objettext" placeholder="Sujet" required minlength="3"/>
             </div>
             <div class="form-group">
-              <label for="message" id="messagetext">Message</label>
-              <textarea name="Message" id="message" rows="3" placeholder="Ecrivez votre message ici...."></textarea>
+              <label for="message" id="message">Message</label>
+              <textarea name="Message" id="messagetext" rows="3" placeholder="Ecrivez votre message ici...."></textarea>
             </div>
             <div class="form-group" style="text-align:center;">
               <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Envoyer</button>
