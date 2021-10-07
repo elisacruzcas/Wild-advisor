@@ -1,158 +1,173 @@
+@import './fonts.css';
+
 body {
   justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     margin: 0;
+    background-color: #1D1D1D;
+}
+/*header */
+
+.wild-logo {
+  height: 50px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.burger {
+  height: 50px;
+  width: auto;
+}
+
+.topnav {
+  background-color: var(--dark-gray);
   overflow: hidden;
 }
-  li {
-    float: right;
-  } 
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 2px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: grey;
-    
-  }
-  .active {
-    background-color: white;
-  }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: var(--main-font-family);
+  height: 50px;
+}
+
+.topnav a:hover {
+    background-color: var(--main-wcs-color);
+}
+
+.topnav .icon {
+  display: none;
+} 
+
+/*A propos */
  h1 {
+   font-family: 'Stick No Bills', sans-serif;
    font-size: 218%;
    color: white;
-   padding-top: 45px;
-  height: 105px;
+   padding-top: 24px;
+  height: 145px;
   text-align: center;
-  background-image: url("media/placeholder.jpeg");
-  /* margin-left: -6px; */
-  /* scroll-margin-right: -6px; */
+  background-image: url("assets/placeholder3.jpeg");
+  background-size: 100%;
   }
   
+  /*Projet h2 + paragraph */
+
   .leproject {
+    font-family: 'Roboto', sans-serif; 
     margin-left: 40px;
     margin-right: 40px;
     text-align: justify;
+    color: white;
   }
 
 h2 {
+  font-family: 'Stick No Bills', sans-serif;
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  color: white;
+  background-color:#6b6b6b;
 }
-.name-block {
-  display: none;
-}
+
+/* Equipe */
 h3 {
-  margin-top: 45px;
+  font-family: 'Stick No Bills', sans-serif;
+  margin-top: 15px;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 18px;
+  color: white;
+  background-color:#6b6b6b;
+}
+
+#block1 {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 125%;
+  color: white;
+}
+#block2 {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 125%;
+  color: white;
+}
+.bloqueuno {
+  float: left;
+  width: 30.33%;
+  padding: 5px;
+}
+
+#block1 {
+  margin-bottom: 50px;
+}
+
+.block1::after {
+  content: "";
+  clear: both;
+display: inline-block;
+}
+
+.bloquedos {
+  float: left;
+  width: 30.33%;
+  padding: 5px;
+}
+
+.bloque2::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 img {
-    margin-bottom: 155px;
-    margin: -4px;
-    /* margin: -9px; */
-    width: 34.6%;
-    height: 235px;
-    object-fit: cover;
-    transition: transform .2s;
+  border-radius: 15px;
+ transition: transform .2s;
 
   }
 
- 
-
-#teamfont {
-font-size: 80%;
-color: white;
-font-weight: bold;
-}
-
-#teamfontdos {
-  font-size: 80%;
-  color: white;
-  font-weight: bold;
+  img:hover {
+    transform: scale(1.5);
   }
 
-
-.teamuno {
-  display: none;
-  position: absolute;
-  bottom: -170px;
-  left: 40px;
-}
-.teamdos {
-  position: absolute;
-  bottom: -170px;
-  left: 150px;
-  display: none;
-}
-.teamtres {
-  position: absolute;
-  bottom: -170px;
-  left: 290px;
-  display: none;
-}
-
-.teamcuatro {
-  position: absolute;
-  bottom: -240px;
-  left: 7px;
-}
-.teamcinco {
-  position: absolute;
-  bottom: -240px;
-  left: 165px;
-  display: none;
-}
-.teamseis {
-  position: absolute;
-  bottom: -240px;
-  left: 289px;
-  display: none;
-}
-
+/*Contact Nous */
 h4 {
+  width: 100%;
+  display: inline-block;
+  font-family: 'Stick No Bills', sans-serif;
+  text-align: center;
+  margin-bottom: 18px;
+  font-family: 'Stick No Bills', sans-serif;
   font-size: 145%;
   margin-top: 35px;
-  text-align: center;
   margin-bottom: 35px;
+  background-color: #6b6b6b;
+  color: white;
 }
+
 #contact {
-  /* width: 500px; */
-  /* margin: 0 auto; */
 font-size: 120%;
-/* border-radius: 20%; */
+color: white
 }
 
 #emailtext {
-  margin-left: 25px;
- 
+  margin-left: 15px;
 }
+
 #objettext {
-  margin-left: 20px;
+  margin-left: 13px;
 }
 #messagetext {
-  margin-left: 5px;
+  margin-left: -3px;
 }
 
 #message {
-  font-size: 100%;
-  margin-left: -6px;
- margin-bottom: -20px;
-}
+  font-size: 90%;
 
+}
 
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -165,11 +180,23 @@ font-size: 120%;
   margin-bottom: 25px;
   margin-left: 60px;
   border-radius: 15px;
+  font-family: 'Stick No Bills';
 }
 .form-group input[type="text"],
 .form-group input[type="email"] {
   height: 0.5rem;
 }
+
+button {
+  font-family: 'Stick No Bills';
+  font-size: 78%;
+  margin-top: 50px;
+  margin-bottom: 110px;
+  border-radius: 15px;
+  background-color: white;
+  transition: transform .2s;
+  transform: scale(1.5);
+} */
 
 footer {
   position: fixed;
@@ -183,81 +210,62 @@ footer {
   background-color: black;
 }
 
-button {
-  font-size: 78%;
-  margin-top: 50px;
-  margin-bottom: 110px;
-  border-radius: 15px;
-  background-color: white;
+/* Footer */
+
+footer {
+  padding: 5px 25px 5px 5px;
+  background-color: var(--dark-gray);
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--second-font-family);
+  font-weight: 800;
+  padding-right: 20px; /* to fix label offset */
 }
 
-.textfooter {
-  padding-right: 30px;
-  font-size: 150%;
+footer a:hover {
+    text-decoration: underline;
 }
 
-@media only screen and (min-width: 450px) {
-
-  img:hover {
-    transform: scale(1.5);
-  }
-
-  #margenuno {
-    margin-left: -90px;
-margin-right: -100px;
-  }
-
-  #margendos {
-    margin-left: -90px;
-margin-right: -100px;
-  }
-  .name-block {
-    text-align: center;
-    font-size: 120%;
-    display: inline-table;
-   width: 33%;
-  }
-  
-  #teamfont {
-    font-size: 15%;
-    color: white;
-    }
-    #teamfontdos {
-      font-size: 10%;
-      color : white;
-      }
+@media screen and (min-width: 600px) {
   img {
-    margin: 9px;
-    height: 100%;
-    width: 25%;
-    border-radius: 50%;
+  border-radius: 50%;
+  }
+}
+
+ @media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    } 
+  } 
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    height: auto;
+  }
   }
 
-  .teamuno {
-
-    text-align: center;
-    margin-bottom: 100px;
-    margin-left: -40px;
-  
-  }
-  .teamdos {
-    margin-bottom: 100px;
-    margin-left: -120px;
-  }
-  .teamtres {
-    margin-bottom: 100px;
-    margin-left: -280px;
-  }
-  
-  .teamcuatro {
- margin-bottom: 350px;
-  }
-  .teamcinco {
-    margin-bottom: 350px;
-    margin-left: -240px;
-  }
-  .teamseis {
-    margin-bottom: 350px;
-    margin-left: -280px;
-  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    height: auto;
   }

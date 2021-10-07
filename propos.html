@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang=en>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Stick+No+Bills&display=swap" rel="stylesheet">
 <meta charset=utf-8>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +11,22 @@
 <link rel="stylesheet" href="proposstyle.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="#surprendsmoi">SURPRENDS-MOI</a></li>
-            <li><a href="#jaisoif">J’AI SOIF</a></li>
-            <li><a href="#surlepouce">SUR LE POUCE</a></li>
-            <li><a href="#surplace">SUR PLACE</a></li>
-          </ul>
+
+  <header>
+        
+    <div class="topnav" id="myTopnav">
+                <a href="index.html"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
+                <a href="index.html">Accueil</a>
+                <a href="place.html">Sur place</a>
+                <a href="pouce.html">Sur le pouce</a>
+                <a href="soif.html">J'ai soif</a>
+                <a href="surprise.html">Surprends-moi</a>
+                <a href="favoris.html">Favoris</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="burger" src="./assets/Hamburger_icon.png" alt="Hamburger icon"></a>
+            </div>
     </header>
+
+
     <h1>A Propos</h1>
     <h2>Le Project </h2>
     <p class="leproject">Nombreux sont les Wilders à ne pas savoir quoi ni où aller 
@@ -29,45 +40,48 @@
        notre simulateur vous proposera aussi une excuse bidon pour convaincre votre 
        formateur de votre bonne foi (ou pas…)
       </p>
+
     <h3>L’équipe</h3>
-    <div class="name-block">
-<p>Melissa Olas
-   </p>
-    </div>
-    <div id="margenuno" class="name-block">
-      <p>
-        Etienne Fromentin
-      </p>
-          </div>
-          <div class="name-block">
-            <p>Maria Elisa Cruz </p>
-                </div>
-    <div id="teamfont" class="teamone">
-    <img class="photouno" src="/media/team1.jpg" alt="teammember 1">
+
+    <div id="block1" class="block1">
+
+      <div class="bloqueuno" id="bloque">
+    <img class="photouno" src="/assets/team1.jpg" alt="teammember 1" style="width:80%">
     <div class="teamuno">Melissa Olas</div>
-    <img class="photodos" src="/media/team2.jpg" alt="teammember 2">
-    <div class="teamcuatro">Matthieu Lemarchand</div>
-    <img class="phototres"src="/media/team3.jpeg" alt="teammember 3">
-    <div class="teamdos">Etienne Fromentin</div>
     </div>
-    <div class="name-block">
-      <p>Matthieu Lemarchand</p>
-          </div>
-          <div class="name-block" id="margendos">
-            <p>Vincent Lejeune</p>
-                </div>
-                <div class="name-block">
-                  <p>Juan Carlos Cobas </p>
-                      </div>
-   <div id="teamfontdos" class="teamtwo">
-    <img class="photocuatro" src="/media/team4.jpg" alt="teammember 4">
-    <div class="teamtres">Maria Elisa Cruz</div>
-    <img class="photocinco"src="/media/team5.jpg" alt="teammember 5">
-    <div class="teamcinco">Vincent Lejeune</div>
-    <img class="photoseis"src="/media/team6.png" alt="teammember 6">
-    <div class="teamseis">Juan Carlos Cobas</div>
+
+    <div class="bloqueuno" id="bloque">
+    <img class="photo" src="/assets/team2.jpg" alt="teammember 2" style="width:80%">
+    <div class="nombre">Etienne Fromentin</div>
   </div>
+
+  <div class="bloqueuno" id="bloque">
+    <img class="photo"src="/assets/team3.jpeg" alt="teammember 3" style="width: 80%">
+    <div class="nombre">Maria Elisa Cruz</div>
+    </div>
+    </div>
+        
+   <div id="block2" class="block2">
+
+    <div class="bloquedos" id="bloque2">
+    <img class="photocuatro" src="/assets/team4.jpg" alt="teammember 4" style="width:80%">
+    <div class="teamcuatro">Matthieu Lemarchand</div>
+    </div>
+    
+    <div class="bloquedos" id="bloque2">
+    <img class="photo"src="/assets/team5.jpg" alt="teammember 5" style="width:80%">
+    <div class="nombre">Vincent Lejeune</div>
+    </div>
+
+    <div class="bloquedos" id="bloque2">
+    <img class="photo"src="/assets/team6.png" alt="teammember 6" style="width:80%">
+    <div class="nombre">Juan Carlos Cobas</div>
+    </div>
+  </div>
+</div>
+
   <h4>Nous Contacter</h4>
+
   <div id="contact" class="contact">
     <div class="contact-inner content center">
         <form action="" method="POST">
@@ -88,10 +102,9 @@
             </div>
           </form>
   </div>
-</div>
-<footer> 
-  <p class="textfooter">A propos</p>
-</footer>
+
 <script src="propos.js"></script>
+
+<footer class="footer"><a href='./a-propos.html'>À propos</a></footer>
 </body>
 </html>
