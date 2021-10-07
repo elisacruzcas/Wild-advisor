@@ -174,20 +174,4 @@ for (let i = 0; i < shops.length; i++) {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+export {createCard}
