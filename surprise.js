@@ -18,12 +18,22 @@ resultsButton.addEventListener('click', function(){
     distance *= 5
 
     let rating = document.getElementById("rating-select").selectedIndex;
-    if (rating != 0) {rating +=2}
+    switch (rating) {
+        case 1:
+            rating = 3.5
+            break
+        case 2:
+            rating = 4
+            break
+        case 3:
+            rating = 4.5
+            break
+    }
 
     for (let shop of shops) {
         if (price == 0 || shop.price_range.length <= price) {
             if (distance == 0 || shop.trajet <= distance) {
-                if (rating == 0 || shop.ratings.length >= rating) {
+                if (rating == 0 || shop.ratings >= rating) {
                     createCard(shop)
                 }
             }
