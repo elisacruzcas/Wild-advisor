@@ -27,7 +27,7 @@ function createCard(parameter) {
           parameter.isFavorit = true
           localStorage.setItem(parameter.id, parameter.name);
         } else {
-          console.log('remove');
+          // console.log('remove');
           setFavBtn.innerHTML = `&#xe87e`;
           parameter.isFavorit = false
           localStorage.removeItem(parameter.id);
