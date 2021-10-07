@@ -1,5 +1,10 @@
 @import './fonts.css';
 
+h1 {
+    font-size: 48px !important; 
+    font-weight: 900;
+}
+
 h2 {
     text-align: center;
     padding: 10px;
@@ -29,6 +34,7 @@ select {
     color: var(--main-wcs-color);
     font-weight: 600;
     border-radius: 5px;
+    width: 150px;
 }
 
 .form-button{
@@ -383,14 +389,23 @@ footer a:hover {
   } 
 
 @media screen and (max-width: 800px) {
+    .simulateur-buttons {
+        background-color: var(--main-wcs-color);
+        border: 1px solid var(--dark-gray);
+        font-weight: 700;
+        color: white;
+        font-size: 40px;
+        padding: 6px 30px;
+        border-radius: 16px;
+        font-family: var(--main-font-family);
+    }
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
   
-  @media screen and (max-width: 800px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -400,7 +415,7 @@ footer a:hover {
     .topnav.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
       height: auto;
     }
-  } 
+}
