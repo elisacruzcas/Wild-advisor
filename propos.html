@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Stick+No+Bills&display=swap" rel="stylesheet">
+<meta charset=utf-8>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="title">A Propos</title>
+<link rel="stylesheet" href="proposstyle.css">
+</head>
+<body>
+
+  <header>
+        
+    <div class="topnav" id="myTopnav">
+                <a href="index.html"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
+                <a href="index.html">Accueil</a>
+                <a href="place.html">Sur place</a>
+                <a href="pouce.html">Sur le pouce</a>
+                <a href="soif.html">J'ai soif</a>
+                <a href="surprise.html">Surprends-moi</a>
+                <a href="favoris.html">Favoris</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="burger" src="./assets/Hamburger_icon.png" alt="Hamburger icon"></a>
+            </div>
+    </header>
+
+
+    <h1>A Propos</h1>
+    <h2>Le Project </h2>
+    <p class="leproject">Nombreux sont les Wilders à ne pas savoir quoi ni où aller 
+      manger le midi. Le Mapster est peu utilisé, parce qu’il faut télécharger 
+      l’appli, se connecter et ajouter le réseau WCS. Notre site Wild-Advisor permet de 
+      vous renseigner sur les bonnes adresses, classées par catégories (restaurants, bars, snacking) 
+      intégrant des critères de prix, de distance et d’avis clients. 
+      Un simulateur vous permet selon les critères sélectionnés de trouver 
+      l’adresse qui vous correspond le mieux.
+      Si vous vous attardez trop à midi et que vous êtes en retard en cours,
+       notre simulateur vous proposera aussi une excuse bidon pour convaincre votre 
+       formateur de votre bonne foi (ou pas…)
+      </p>
+
+    <h3>L’équipe</h3>
+
+    <div id="block1" class="block1">
+
+      <div class="bloqueuno" id="bloque">
+    <img class="photouno" src="/assets/team1.jpg" alt="teammember 1" style="width:80%">
+    <div class="teamuno">Melissa Olas</div>
+    </div>
+
+    <div class="bloqueuno" id="bloque">
+    <img class="photo" src="/assets/team2.jpg" alt="teammember 2" style="width:80%">
+    <div class="nombre">Etienne Fromentin</div>
+  </div>
+
+  <div class="bloqueuno" id="bloque">
+    <img class="photo"src="/assets/team3.jpeg" alt="teammember 3" style="width: 80%">
+    <div class="nombre">Maria Elisa Cruz</div>
+    </div>
+    </div>
+        
+   <div id="block2" class="block2">
+
+    <div class="bloquedos" id="bloque2">
+    <img class="photocuatro" src="/assets/team4.jpg" alt="teammember 4" style="width:80%">
+    <div class="teamcuatro">Matthieu Lemarchand</div>
+    </div>
+    
+    <div class="bloquedos" id="bloque2">
+    <img class="photo"src="/assets/team5.jpg" alt="teammember 5" style="width:80%">
+    <div class="nombre">Vincent Lejeune</div>
+    </div>
+
+    <div class="bloquedos" id="bloque2">
+    <img class="photo"src="/assets/team6.png" alt="teammember 6" style="width:80%">
+    <div class="nombre">Juan Carlos Cobas</div>
+    </div>
+  </div>
+</div>
+
+  <h4>Nous Contacter</h4>
+
+  <div id="contact" class="contact">
+    <div class="contact-inner content center">
+        <form action="" method="POST">
+            <div class="form-group">
+              <label id="mail" for="name">Mail</label>
+              <input name="Email"  type="email" id="emailtext" placeholder="email@domain.tld" required  maxlength="25"/>
+            </div>
+            <div class="form-group">
+              <label id="objet "for="email">Objet</label>
+              <input type="text" name="Name" id="objettext" placeholder="Sujet" required minlength="3"/>
+            </div>
+            <div class="form-group">
+              <label for="message" id="message">Message</label>
+              <textarea name="Message" id="messagetext" rows="3" placeholder="Ecrivez votre message ici...."></textarea>
+            </div>
+            <div class="form-group" style="text-align:center;">
+              <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Envoyer</button>
+            </div>
+          </form>
+  </div>
+
+<script src="propos.js"></script>
+
+<footer class="footer"><a href='./a-propos.html'>À propos</a></footer>
+</body>
+</html>
