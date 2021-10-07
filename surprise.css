@@ -44,7 +44,7 @@ select {
     font-family: var(--main-font-family);   
 }
 
-button {
+.simulateur-buttons {
     background-color: var(--main-wcs-color);
     border: 1px solid var(--dark-gray);
     font-weight: 700;
@@ -55,10 +55,15 @@ button {
     font-family: var(--main-font-family);
 }
 
-button:hover {
+.simulateur-buttons:hover {
     box-shadow: 0 0.2em 0.2em 0;
     opacity: 1;
     font-weight: 900;
+}
+
+#search-close-button {
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .form-element {
@@ -71,10 +76,6 @@ button:hover {
 .search-results {
     background-color: rgba(132, 145, 146, 75%);
     display: none;
-}
-
-.results-elements {
-    height: 2000px;
 }
 
 .close-button {

@@ -5,13 +5,12 @@ import shops  from './shops-infos.js';
 
 // SEARCH ENGINE PART
 const results = document.querySelector('.search-results')
-const resultsButton = document.querySelector('.first-button')
-const closeButton = document.querySelector('.close-button')
+const resultsButton = document.querySelector('#search-button')
+const closeButton = document.querySelector('#search-close-button')
 const cardContainer = document.querySelector('.cards')
 
 resultsButton.addEventListener('click', function(){
     cardContainer.innerHTML = ""
-    
 
     let price = document.getElementById("price-select").selectedIndex;
 
@@ -46,9 +45,9 @@ const verbs = getVerbs()
 const objects = getObjects()
 
 const excuse = document.querySelector('.excuse')
-const excuseButton = document.getElementsByClassName('btn')
+const excuseButton = document.querySelector('#excuse_button')
 
-excuseButton[0].addEventListener('click', function(){
+excuseButton.addEventListener('click', function(){
     excuse.innerHTML = ''
     let excuseElement = document.createElement("p");
 
@@ -59,6 +58,6 @@ excuseButton[0].addEventListener('click', function(){
 
 
     excuseElement.innerHTML = sentence;
-    excuseButton[0].innerHTML = 'AUTRE EXCUSE'
+    excuseButton.innerHTML = 'AUTRE EXCUSE'
     excuse.appendChild(excuseElement);
 })

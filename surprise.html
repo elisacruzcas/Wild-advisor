@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Stick+No+Bills&display=swap" rel="stylesheet">
     <title>Simulateur et excuses bidons | Wild Advisor</title>
+
 </head>
 
 <body>
 
-
     <header>
-        
-    <div class="topnav" id="myTopnav">
+            <div class="topnav" id="myTopnav">
                 <a href="index.html"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
                 <a href="index.html">Accueil</a>
                 <a href="place.html">Sur place</a>
@@ -28,14 +29,7 @@
                 <a href="favoris.html">Favoris</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="burger" src="./assets/Hamburger_icon.png" alt="Hamburger icon"></a>
             </div>
-
-    
-    
     </header>
-
-
-
-    
 
     <main>
     <h1 class="title">Surprends-moi</h1>
@@ -53,7 +47,6 @@
                     <option value="€€€">€€€</option>
                 </select>
             </div>
-            
             <div class="form-element">
                 <label for="distance">Distance</label>
                 <select name="distance" id="distance-select">
@@ -63,7 +56,6 @@
                     <option value="15">15 min</option>
                 </select>
             </div>
-            
             <div class="form-element">
                 <label for="rating">Avis</label>
                 <select name="rating" id="rating-select">
@@ -75,60 +67,15 @@
             </div>
         </div>        
     </form>
-    <div class="form-button"><button class="first-button">RECHERCHER</button></div>
-    
+    <div class="form-button"><button class="simulateur-buttons" id="search-button">RECHERCHER</button></div>
     
     <div class="search-results"><h2>Résultats</h2>
         <div class="results-elements">
 
-
-
-
-
-
-
-
-
-
-            <div class="cards">
-
-
-                <!-- <div class="card" id='template'> 
-                  <div class="card-header">
-                    <div class="card-img">
-                    <img class="image-enseigne" src= "" alt="image d'illustration"></div>
-                    <div class="trajet"></div>
-                    <input type="" id="">
-                    <label for="" class="favButton"></label>
-                  </div>
-                  <div class="card-body">
-                    <div class="nom-enseigne"></div>
-                    <div class="style-enseigne"> </div>
-                    <div class="prix-enseigne"></div>
-                    <div class="avis-enseigne"></div>
-                    <div class="maps-enseigne"><a class="maps-link" href=""></a></div>
-                    <button class="btn-open-card" onclick=""></button>
-                  </div>
-                  <div class="descript-enseigne">
-                    <div class="descript-text"></div>
-                    <div class="descript-coord"></div>
-                      <a class="descript-site" href="">
-                    <button class="btn-close-card" onclick=''></button>
-                  </div>
-                </div> -->
-
-
-              </div>
-
-
-
-
-
-
-
+            <div class="cards"></div>
 
         </div>
-        <div class="form-button"><button class="close-button">x</button></div>
+        <div class="form-button"><button class="simulateur-buttons" id="search-close-button">x</button></div>
     </div>
     
     <div class="excuses-bidons">
@@ -136,7 +83,7 @@
             <p>Tu vas arriver en retard au Campus ?</p>
             <p>Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
     
-            <button class="btn" id="excuse_button">SORS UNE EXCUSE</button>
+            <button class="simulateur-buttons" id="excuse_button">SORS UNE EXCUSE</button>
 
             <div class="excuse"></div>
             <div class="excuse-space"></div>
