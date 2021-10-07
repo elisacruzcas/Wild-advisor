@@ -220,7 +220,7 @@ footer a:hover {
 
 .avis-enseigne::before {
     content: '★★★★★';
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background: linear-gradient(90deg, orange var(--percent), var(--lighter-gray) var(--percent));
     -webkit-background-clip: text;
             background-clip: text;
