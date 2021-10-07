@@ -1,7 +1,13 @@
 @import './fonts.css';
 
-h1 {
-    font-size: 48px !important; 
+.title {
+    height: 10vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    color: var(--main-wcs-color);
+    background-color: var(--darker-gray);
+    font-size: 48px;
     font-weight: 900;
 }
 
@@ -11,7 +17,7 @@ h2 {
     background-color: var(--dark-gray);
     color: white;
     font-family: var(--main-font-family);
-    font-size: 22px;
+    font-size: 30px;
 }
 
 form {
@@ -21,20 +27,26 @@ form {
 }
 
 .form-element {
-    margin: 5px;
+    width: 85vw;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--second-font-family);
 }
 
 label {
     text-transform: uppercase;
     color: white;
     font-weight: 800;
+    font-size: 20px;
 }
 
 select {
     color: var(--main-wcs-color);
     font-weight: 600;
     border-radius: 5px;
-    width: 150px;
+    font-size: 20px;
+    width: 200px;
 }
 
 .form-button{
@@ -45,14 +57,15 @@ select {
     font-family: var(--main-font-family);   
 }
 
+
 .simulateur-buttons {
     background-color: var(--main-wcs-color);
     border: 1px solid var(--dark-gray);
     font-weight: 700;
     color: white;
-    font-size: 20px;
-    padding: 3px 15px;
-    border-radius: 8px;
+    font-size: 30px;
+    padding: 5px 25px;
+    border-radius: 16px;
     font-family: var(--main-font-family);
 }
 
@@ -67,11 +80,9 @@ select {
     margin-bottom: 10px;
 }
 
-.form-element {
-    width: 65vw;
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--second-font-family);
+#other-search-close-button {
+    border-radius: 50%;
+    margin-top: 10px;
 }
 
 .search-results {
@@ -132,16 +143,6 @@ select {
     border: none;
     background-color: var(--darker-gray);
     float: right;
-}
-
-.title {
-    height: 3em;
-    padding-top: 1em;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: var(--main-font-family);
-    color: var(--main-wcs-color);
-    background-color: var(--darker-gray);
 }
 
 .cards {
@@ -264,6 +265,9 @@ select {
     border: none;
     border-radius: 0%;
 }
+.card-body button:hover {
+    cursor:pointer;
+}
 
 .descript-enseigne {
     position: relative;
@@ -301,21 +305,9 @@ select {
     width: 3em;
     border: none;
 }
-
-@media screen and (min-width: 576px) { 
-    .card { 
-        width: 20em;
-        max-height: 40em;
-        margin: 3em;
-    } 
-    .card-header {
-        width: 20em;
-        max-height: 20em;
-    }
-    .image-enseigne {
-        object-fit: contain;
-    }    
-  } 
+.btn-close-card:hover {
+    cursor:pointer;
+}
 
 /* CSS SPECIFIQUE AUX HEADER ET FOOTER */
 
@@ -389,17 +381,6 @@ footer a:hover {
   } 
 
 @media screen and (max-width: 800px) {
-    .simulateur-buttons {
-        background-color: var(--main-wcs-color);
-        border: 1px solid var(--dark-gray);
-        font-weight: 700;
-        color: white;
-        font-size: 40px;
-        padding: 6px 30px;
-        border-radius: 16px;
-        font-family: var(--main-font-family);
-    }
-
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -419,3 +400,42 @@ footer a:hover {
       height: auto;
     }
 }
+
+@media screen and (min-width: 576px) { 
+    .card { 
+        width: 20em;
+        max-height: 40em;
+        margin: 3em;
+    } 
+    .card-header {
+        width: 20em;
+        max-height: 20em;
+    }
+    .image-enseigne {
+        object-fit: contain;
+    }    
+
+    h2 {
+        font-size: 22px;
+    }
+
+    select {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .simulateur-buttons {
+        font-size: 20px;
+        padding: 3px 15px;
+        border-radius: 8px;
+    }
+
+    .form-element {
+        width: 65vw;
+        margin: 5px 0;
+    }
+  } 
