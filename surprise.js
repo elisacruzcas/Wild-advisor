@@ -33,7 +33,7 @@ resultsButton.addEventListener('click', function(){
     for (let shop of shops) {
         if (price == 0 || shop.price_range.length <= price) {
             if (distance == 0 || shop.trajet <= distance) {
-                if (rating == 0 || shop.ratings >= rating) {
+                if (shop.ratings >= rating) {
                     createCard(shop)
                 }
             }
