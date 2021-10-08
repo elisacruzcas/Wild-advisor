@@ -34,21 +34,21 @@ footer {
 
 #surPlace {
     align-items: center;
-    background-image: url(/assets/place_5.jpeg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)), url(/assets/place\ Mobile\ .jpeg); 
 }
 
 #surLePouce {
-    background-image: url(/assets/pouce_4.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)), url(/assets/pouce\ Mobile.jpeg);
     align-items: center;
 }
 
 #jaiSoif {
-    background-image: url(/assets/soif_3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)), url(/assets/soif\ Mobile.jpeg);
     align-items: center;
 }
 
 #surprendsMoi {
-    background-image: url(/assets/surprise_4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)), url(/assets/surprise\ Mobile.jpg);
     align-items: center;
 }
 
@@ -129,7 +129,8 @@ footer {
     text-align: center;
     color: white;
     height: 100px;
-    font-size:larger;
+    font-size:  larger;
+    font-family: var(--main-font-family);
     
     
     
@@ -163,6 +164,7 @@ footer {
     
     .photo:hover {
         transform: scale(1.2);
+        cursor: pointer;
     }
 
     .Logo {

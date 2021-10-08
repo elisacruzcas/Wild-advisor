@@ -90,13 +90,13 @@ h3 {
 }
 
 #block1 {
-  font-family: 'Roboto', sans-serif; 
+  font-family: var(--main-font-family);
   font-size: 125%;
   color: white;
 }
 #block2 {
-  font-family: 'Roboto', sans-serif; 
-  font-size: 135%;
+  font-family: var(--main-font-family);
+  font-size: 125%;
   color: white;
 }
 .bloqueuno {
@@ -155,18 +155,19 @@ h4 {
 #contact {
 font-family: 'Stick No Bills', sans-serif;
 font-size: 120%;
+font-family: var(--main-font-family);
 color: white
 }
 
 #emailtext {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 #objettext {
-  margin-left: 13px;
+  margin-left: 10px;
 }
 #messagetext {
-  margin-left: -3px;
+  margin-left: 10px;
 }
 
 #message {
@@ -175,6 +176,13 @@ color: white
   line-height: 20px;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
 
 .form-group input[type="text"],
 .form-group input[type="email"],
