@@ -183,6 +183,7 @@ select {
     background-color: #11ffee00; /*transparent*/
     margin: 5px;
     color: red;
+    -webkit-align-self: start;
 }
 
 .favButton:hover {
@@ -198,6 +199,7 @@ select {
     background-color: var(--lighter-gray);
     color: white; 
     padding-left: 3px;
+    -webkit-align-self: start;
 }
 
 .card-body {
