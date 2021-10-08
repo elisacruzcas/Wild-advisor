@@ -86,12 +86,12 @@ h3 {
 }
 
 #block1 {
-  font-family: 'Roboto', sans-serif; 
+  font-family: var(--main-font-family);
   font-size: 125%;
   color: white;
 }
 #block2 {
-  font-family: 'Roboto', sans-serif; 
+  font-family: var(--main-font-family);
   font-size: 125%;
   color: white;
 }
@@ -150,6 +150,7 @@ h4 {
 
 #contact {
 font-size: 120%;
+font-family: var(--main-font-family);
 color: white
 }
 

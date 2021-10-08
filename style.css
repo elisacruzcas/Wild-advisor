@@ -138,13 +138,6 @@ select {
     color: var(--main-wcs-color);
 } 
 
-#logoFavoris {
-    font-size: 30px;
-    border: none;
-    background-color: var(--darker-gray);
-    float: right;
-}
-
 .cards {
     display: flex;
     margin-top: 10px;
