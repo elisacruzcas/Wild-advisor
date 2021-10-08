@@ -199,7 +199,7 @@ select {
     background-color: var(--lighter-gray);
     color: white; 
     padding-left: 3px;
-    -webkit-align-self: start;
+    -webkit-align-self: end;
 }
 
 .card-body {
