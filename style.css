@@ -87,7 +87,7 @@ select {
 }
 
 .search-results {
-    background-color: rgba(132, 145, 146, 75%);
+    background-color: var(--dark-gray);
     display: none;
 }
 
