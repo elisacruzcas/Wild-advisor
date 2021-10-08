@@ -184,6 +184,7 @@ select {
     margin: 5px;
     color: red;
     -webkit-align-self: start;
+    -webkit-justify-self: end;
 }
 
 .favButton:hover {
@@ -200,6 +201,7 @@ select {
     color: white; 
     padding-left: 3px;
     -webkit-align-self: end;
+    -webkit-justify-self: end;
 }
 
 .card-body {
