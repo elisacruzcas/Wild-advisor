@@ -155,19 +155,27 @@ color: white
 }
 
 #emailtext {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 #objettext {
-  margin-left: 13px;
+  margin-left: 10px;
 }
 #messagetext {
-  margin-left: -3px;
+  margin-left: 10px;
 }
 
 #message {
   font-size: 90%;
 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .form-group input[type="text"],
