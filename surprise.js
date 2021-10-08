@@ -7,6 +7,7 @@ import shops  from './shops-infos.js';
 const results = document.querySelector('.search-results')
 const resultsButton = document.querySelector('#search-button')
 const closeButton = document.querySelector('#search-close-button')
+const otherCloseButton = document.querySelector('#other-search-close-button')
 const cardContainer = document.querySelector('.cards')
 
 resultsButton.addEventListener('click', function(){
@@ -47,7 +48,9 @@ resultsButton.addEventListener('click', function(){
 closeButton.addEventListener('click', function(){
     results.style.display = 'none'
 })
-
+otherCloseButton.addEventListener('click', function(){
+    results.style.display = 'none'
+})
 
 // BAD EXCUSES PART
 const characters = getCharacters()
