@@ -187,6 +187,10 @@ select {
     color: red;
 }
 
+.favButton:hover {
+    cursor: pointer;
+}
+
 .trajet {
     font-weight: bold;
     font-size: x-large;
