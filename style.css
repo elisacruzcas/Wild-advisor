@@ -162,6 +162,7 @@ select {
 
 .card-header {
     display: grid; 
+    position: relative;
 }
 
 .card-image {
@@ -176,15 +177,17 @@ select {
 
 .favButton {
     position: absolute;
-    align-self: start;
-    justify-self: end;
+    /* align-self: start;
+    justify-self: end; */
     border: none;
     border-radius: none;
     background-color: #11ffee00; /*transparent*/
     margin: 5px;
     color: red;
-    -webkit-align-self: start;
-    -webkit-justify-self: end;
+    /* -webkit-align-self: start; */
+    /* -webkit-justify-self: end; */
+    right: 0;
+    top: 0%;
 }
 
 .favButton:hover {
@@ -195,13 +198,13 @@ select {
     font-weight: bold;
     font-size: x-large;
     position: absolute;
-    align-self: end;
-    justify-self: end; 
+    /* align-self: end;
+    justify-self: end;  */
     background-color: var(--lighter-gray);
     color: white; 
     padding-left: 3px;
-    -webkit-align-self: end;
-    -webkit-justify-self: end;
+    bottom: 0;
+    right: 0;
 }
 
 .card-body {
