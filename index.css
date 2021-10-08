@@ -129,7 +129,8 @@ footer {
     text-align: center;
     color: white;
     height: 100px;
-    font-size:larger;
+    font-size:  larger;
+    font-family: var(--main-font-family);
     
     
     
