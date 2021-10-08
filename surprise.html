@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="surprise.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="fonts.css"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Stick+No+Bills&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Wild-advisor-logo.png"/>
     <title>Simulateur et excuses bidons | Wild Advisor</title>
+
 </head>
+
 <body>
 
-
     <header>
-        
-    <div class="topnav" id="myTopnav">
-                <a href="index.html"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" id="topnav-logo"><img class="wild-logo" src="./assets/Wild-advisor-logo.png" alt="Wild advisor"></a>
                 <a href="index.html">Accueil</a>
                 <a href="place.html">Sur place</a>
                 <a href="pouce.html">Sur le pouce</a>
@@ -29,12 +32,8 @@
             </div>
     </header>
 
-
-
-    
-
     <main>
-    <h1 class="title">Surprends-moi</h1>
+    <h1 class="title" id="h1">Surprends-moi</h1>
     
     <h2 class="subtitle">Trouve l'établissement qui te correspond le mieux</h2>
     
@@ -49,49 +48,52 @@
                     <option value="€€€">€€€</option>
                 </select>
             </div>
-            
             <div class="form-element">
                 <label for="distance">Distance</label>
                 <select name="distance" id="distance-select">
                     <option value="none">Peu importe</option>
-                    <option value="€">5 min</option>
-                    <option value="€€">10 min</option>
-                    <option value="€€€">15 min</option>
+                    <option value="5">5 min</option>
+                    <option value="10">10 min</option>
+                    <option value="15">15 min</option>
                 </select>
             </div>
-            
             <div class="form-element">
                 <label for="rating">Avis</label>
                 <select name="rating" id="rating-select">
                     <option value="none">Peu importe</option>
-                    <option value="€">*** ou plus</option>
-                    <option value="€€">**** ou plus</option>
-                    <option value="€€€">*****</option>
+                    <option value="3.5">3,5/5 ou plus</option>
+                    <option value="4">4/5 ou plus</option>
+                    <option value="4.5">4,5/5 ou plus</option>
                 </select>
             </div>
         </div>        
     </form>
-    <div class="form-button"><button class="first-button">RECHERCHER</button></div>
-    
+    <div class="form-button"><button class="simulateur-buttons" id="search-button">RECHERCHER</button></div>
     
     <div class="search-results"><h2>Résultats</h2>
         <div class="results-elements">
+        <div class="form-button"><button class="simulateur-buttons" id="other-search-close-button">x</button></div>
+
+            <div class="cards"></div>
 
         </div>
-        <div class="form-button"><button class="close-button">x</button></div>
+        <div class="form-button"><button class="simulateur-buttons" id="search-close-button">x</button></div>
     </div>
     
     <div class="excuses-bidons">
         <h2 class="subtitle">Simulateur d'excuses bidons</h2>
-            <p>Tu vas arriver en retard au Campus ? Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
+            <p>Tu vas arriver en retard au Campus ?</p>
+            <p>Pas de problème, il te suffit de récupérer une excuse bidon ci-dessous :</p>
     
-            <button class="btn">SORS UNE EXCUSE</button>
+            <button class="simulateur-buttons" id="excuse_button">SORS UNE EXCUSE</button>
 
             <div class="excuse"></div>
+            <div class="excuse-space"></div>
     </div>
     
     </main>
-    <script src="surprise.js"></script>
+    <script type="module" src="surprise.js"></script>
+    <script src="pages-header.js"></script>
 
     
 

@@ -47,7 +47,7 @@ body {
 /*A propos */
  h1 {
    font-family: 'Stick No Bills', sans-serif;
-   font-size: 218%;
+   font-size: 48px;
    color: white;
    padding-top: 24px;
   height: 145px;
@@ -60,10 +60,11 @@ body {
 
   .leproject {
     font-family: 'Roboto', sans-serif; 
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: justify;
     color: white;
+    font-size: 19px;
   }
 
 h2 {
@@ -73,10 +74,13 @@ h2 {
   margin-bottom: 25px;
   color: white;
   background-color:#6b6b6b;
+  padding: 10px;
 }
 
 /* Equipe */
 h3 {
+  padding: 10px;
+  font-size:  24px;
   font-family: 'Stick No Bills', sans-serif;
   margin-top: 15px;
   text-align: center;
@@ -92,7 +96,7 @@ h3 {
 }
 #block2 {
   font-family: 'Roboto', sans-serif; 
-  font-size: 125%;
+  font-size: 135%;
   color: white;
 }
 .bloqueuno {
@@ -140,15 +144,16 @@ h4 {
   font-family: 'Stick No Bills', sans-serif;
   text-align: center;
   margin-bottom: 18px;
-  font-family: 'Stick No Bills', sans-serif;
-  font-size: 145%;
+  font-size:  24px;
   margin-top: 35px;
   margin-bottom: 35px;
   background-color: #6b6b6b;
   color: white;
+  padding: 10px;
 }
 
 #contact {
+font-family: 'Stick No Bills', sans-serif;
 font-size: 120%;
 color: white
 }
@@ -166,8 +171,10 @@ color: white
 
 #message {
   font-size: 90%;
-
+  height: 100%;
+  line-height: 20px;
 }
+
 
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -189,15 +196,39 @@ color: white
 
 button {
   font-family: 'Stick No Bills';
-  font-size: 78%;
+  font-size: 100%;
   margin-top: 50px;
   margin-bottom: 110px;
   border-radius: 15px;
-  background-color: white;
-  transition: transform .2s;
-  transform: scale(1.5);
-} */
+  background-color: #F76C6C;
+  color: white;
+  border: 3px solid grey;
 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+} 
+
+button:after {
+  border-radius: 15px;
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 3%;
+  padding-left: 8%;
+  margin-left: -7px !important;
+  margin-top: -3%;
+  opacity: 0;
+transition: all 0.8s
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 footer {
   position: fixed;
   left: 0;
